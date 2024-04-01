@@ -1,0 +1,14 @@
+{
+  "name": "hugo-theme-moon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cyrus Yip",
+  "license": "MIT",
+  "dependencies": {
+    "hugo-extended": "^0.124.1"
+  }
+}
