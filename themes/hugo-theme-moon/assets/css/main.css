@@ -1,3 +1,5 @@
+/* Styles should be mobile first. */
+
 /* CSS Reset */
 *,
 *::before,
@@ -11,7 +13,6 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   margin: 1rem;
-  max-width: 768px;
 }
 
 header {
@@ -27,4 +28,13 @@ footer {
 a {
   color: #00e;
   text-decoration: none;
+}
+
+/* desktop styles */
+@media (min-width: 800px) {
+  body {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
