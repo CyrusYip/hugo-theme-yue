@@ -3,15 +3,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* padding: 0; */
-  /* margin: 0; */
 }
-/* body {
-  margin: 0;
-} */
 
 /* Hugo default styles */
-/* body {
+body {
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
@@ -32,4 +27,4 @@ footer {
 a {
   color: #00e;
   text-decoration: none;
-} */
+}
