@@ -7,33 +7,45 @@
   box-sizing: border-box;
 }
 
-/* Hugo default styles */
+/* custom properties */
+:root {
+  --text-color: #222;
+  --body-margin: 1rem;
+  --border: 1px solid var(--text-color);
+  --font-family: sans-serif;
+  --line-height: 1.5;
+  --link-color: #00e;
+  --body-max-width: 768px;
+}
+
+/* global styles */
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: var(--body-margin);
 }
 
 header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+  border-bottom: var(--border);
+  margin-bottom: var(--body-margin);
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+  border-top: var(--border);
+  margin-top: var(--body-margin);
 }
 
 a {
-  color: #00e;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 /* desktop styles */
+/* todo: use variable inside @media */
 @media (min-width: 800px) {
   body {
-    width: 768px;
+    width: var(--body-max-width);
     margin-left: auto;
     margin-right: auto;
   }
