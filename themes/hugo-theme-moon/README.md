@@ -2,6 +2,8 @@
 
 ## Features
 
+- [x] mobile-first
+
 ## Installation
 
 ## Configuration

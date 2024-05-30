@@ -1,0 +1,53 @@
+/* Styles should be mobile first. */
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* custom properties */
+:root {
+  --text-color: #222;
+  --body-margin: 1rem;
+  --border: 1px solid var(--text-color);
+  --font-family: sans-serif;
+  --line-height: 1.5;
+  --link-color: #00e;
+  --body-max-width: 768px;
+}
+// $body-breakpoint: calc(var(--body-max-width) + var(--body-margin) * 2) ;
+$body-breakpoint: 800px;
+
+/* global styles */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  margin: var(--body-margin);
+}
+
+header {
+  border-bottom: var(--border);
+  margin-bottom: var(--body-margin);
+}
+
+footer {
+  border-top: var(--border);
+  margin-top: var(--body-margin);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* desktop styles */
+@media (min-width: $body-breakpoint) {
+  body {
+    width: var(--body-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
