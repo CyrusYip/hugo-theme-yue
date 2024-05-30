@@ -5,7 +5,7 @@
 .Ruserdata
 .hugo_build.lock
 public
-/resources
+resources/
 Thumbs.db
 node_modules/
 /envs/
