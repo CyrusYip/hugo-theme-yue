@@ -1,13 +1,17 @@
 /* Styles should be mobile first. */
 
-/* CSS Reset */
+/*
+CSS Reset
+*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* custom properties */
+/*
+custom properties
+*/
 :root {
   --text-color: #222;
   --body-margin: 1rem;
@@ -17,10 +21,13 @@
   --link-color: #00e;
   --body-max-width: 768px;
 }
+
 // $body-breakpoint: calc(var(--body-max-width) + var(--body-margin) * 2) ;
 $body-breakpoint: 800px;
 
-/* global styles */
+/*
+global styles
+*/
 body {
   color: var(--text-color);
   font-family: var(--font-family);
@@ -43,7 +50,29 @@ a {
   text-decoration: none;
 }
 
-/* desktop styles */
+// center header
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  nav>ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+// center footer
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+desktop styles
+*/
 @media (min-width: $body-breakpoint) {
   body {
     width: var(--body-max-width);
