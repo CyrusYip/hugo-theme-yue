@@ -56,17 +56,21 @@ header {
   flex-direction: column;
   align-items: center;
 
-  nav>ul {
+  >nav>ul {
     display: flex;
     gap: 10px;
     list-style: none;
     padding: 0;
 
     // menu
-    li>a {
+    >li>a {
       background-color: #eee;
       border-radius: 0.3rem;
       padding: 0.3rem;
+
+      &.active {
+        text-decoration-line: underline;
+      }
     }
   }
 }
