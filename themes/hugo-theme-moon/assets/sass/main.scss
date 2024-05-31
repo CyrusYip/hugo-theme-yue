@@ -61,6 +61,13 @@ header {
     gap: 10px;
     list-style: none;
     padding: 0;
+
+    // menu
+    li>a {
+      background-color: #eee;
+      border-radius: 0.3rem;
+      padding: 0.3rem;
+    }
   }
 }
 
