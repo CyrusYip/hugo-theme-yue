@@ -1,0 +1,23 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My New Hugo Site
+
+menus:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 10
+    - name: Posts
+      pageRef: /posts
+      weight: 20
+    - name: Tags
+      pageRef: /tags
+      weight: 30
+    - name: Categories
+      pageRef: /categories
+      weight: 40
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.116.0
