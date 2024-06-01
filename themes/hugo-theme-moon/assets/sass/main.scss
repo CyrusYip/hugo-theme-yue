@@ -9,6 +9,10 @@ CSS Reset
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 /*
 custom properties
 */
@@ -32,7 +36,8 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
   line-height: var(--line-height);
-  margin: var(--body-margin);
+  margin-left: var(--body-margin);
+  margin-right: var(--body-margin);
 }
 
 header {
@@ -73,6 +78,14 @@ header {
       }
     }
   }
+}
+
+// stretch <main> to avoid additional space below <footer>
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; // vh for old browsers that don't support dvh
+  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
 }
 
 // center footer
