@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "hugo server --navigateToChanged --source themes/hugo-theme-moon"
+    "serve": "hugo server --navigateToChanged"
   },
   "author": "Cyrus Yip",
   "license": "MIT",
