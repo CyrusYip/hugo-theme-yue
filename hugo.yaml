@@ -16,6 +16,9 @@ menus:
     - name: Categories
       pageRef: /categories
       weight: 40
+    - name: About
+      pageRef: /about
+      weight: 50
 
 module:
   hugoVersion:
