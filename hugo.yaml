@@ -20,6 +20,9 @@ menus:
       pageRef: /about
       weight: 50
 
+params:
+  ShowFullTextInRSS: true
+
 module:
   hugoVersion:
     extended: true
