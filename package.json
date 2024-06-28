@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "hugo server --navigateToChanged"
+    "server": "hugo server --navigateToChanged",
+    "server:production": "hugo server --navigateToChanged --environment production",
+    "build": "hugo",
+    "clean": "rm -r public/",
+    "clean:server": "npm run clean; npm run server",
+    "clean:server:production": "npm run clean; npm run server:production",
+    "clean:build": "npm run clean; npm run build"
   },
   "author": "Cyrus Yip",
   "license": "MIT",
