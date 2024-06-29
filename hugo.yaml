@@ -1,24 +1,61 @@
 baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+defaultContentLanguageInSubdir: true
 
-menus:
-  main:
-    - name: Home
-      pageRef: /
-      weight: 10
-    - name: Posts
-      pageRef: /posts
-      weight: 20
-    - name: Tags
-      pageRef: /tags
-      weight: 30
-    - name: Categories
-      pageRef: /categories
-      weight: 40
-    - name: About
-      pageRef: /about
-      weight: 50
+languages:
+  en:
+    contentDir: content/en
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    title: My New English Site
+    weight: 1
+    menus:
+      main:
+        - name: Home
+          pageRef: /
+          weight: 10
+        - name: Posts
+          pageRef: /posts
+          weight: 20
+        - name: Tags
+          pageRef: /tags
+          weight: 30
+        - name: Categories
+          pageRef: /categories
+          weight: 40
+        - name: About
+          pageRef: /about
+          weight: 50
+        - name: 中文
+          url: /zh-cn
+          weight: 60
+  zh-CN:
+    contentDir: content/zh-CN
+    languageCode: zh-CN
+    languageDirection: ltr
+    languageName: 中文
+    title: 中文网站
+    weight: 2
+    menus:
+      main:
+        - name: 主页
+          pageRef: /
+          weight: 10
+        - name: 文章
+          pageRef: /posts
+          weight: 20
+        - name: 标签
+          pageRef: /tags
+          weight: 30
+        - name: 类别
+          pageRef: /categories
+          weight: 40
+        - name: 关于
+          pageRef: /about
+          weight: 50
+        - name: English
+          url: /en
+          weight: 60
 
 params:
   ShowFullTextInRSS: true
