@@ -5,6 +5,8 @@
   {{ $dateHuman := .Date | time.Format ":date_long" }}
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
+  {{ partial "i18nlist.html" . }}
+
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}

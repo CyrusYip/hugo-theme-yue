@@ -17,6 +17,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] categories
 - [x] scss (libsass)
 - [x] full-text RSS (enabled by default)
+- [x] show translations
 
 ## Installation
 
