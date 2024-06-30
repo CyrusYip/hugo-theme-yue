@@ -18,6 +18,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] scss (libsass)
 - [x] full-text RSS (enabled by default)
 - [x] show translations
+- [x] customize footer
 
 ## Installation
 
