@@ -1,4 +1,5 @@
 baseURL: https://example.org/
+defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 
 languages:
