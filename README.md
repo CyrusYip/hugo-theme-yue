@@ -24,3 +24,15 @@ To use recommended Hugo version, run `npx hugo`.
 ## Installation
 
 ## Configuration
+
+### title of `/tags` and `/categories`
+
+If your website is not in English, you probably want to customize title of `/tags`.
+
+For example, to customize `/tags` title of `zh-CN` website, create `content/zh-CN/tags/_index.md` and add the following content into the file.
+
+```
+---
+title: 标签
+---
+```
