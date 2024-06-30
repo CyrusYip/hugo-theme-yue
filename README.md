@@ -19,6 +19,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] full-text RSS (enabled by default)
 - [x] show translations
 - [x] customize footer
+- [x] customize date format
 
 ## Installation
 
