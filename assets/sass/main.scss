@@ -90,6 +90,12 @@ header {
   }
 }
 
+// reset translation list
+main > ul.translations {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
 // stretch <main> to avoid additional space below <footer>
 body {
   display: grid;

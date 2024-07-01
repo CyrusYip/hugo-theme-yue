@@ -1,10 +1,9 @@
 {{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<ul>
-  {{ range .Translations }}
-  <li>
-    <a href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}: {{ .LinkTitle }}</a>
-  </li>
-  {{ end }}
-</ul>
+  <ul class="translations">
+    {{ range .Translations -}}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}: {{ .LinkTitle }}</a>
+    </li>
+    {{- end }}
+  </ul>
 {{ end }}
