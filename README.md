@@ -20,6 +20,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] show translations
 - [x] customize footer
 - [x] customize date format
+- [x] language selector
 
 ## Installation
 

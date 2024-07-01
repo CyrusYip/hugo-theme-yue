@@ -27,9 +27,6 @@ languages:
         - name: About
           pageRef: /about
           weight: 50
-        - name: 中文
-          url: /zh-cn
-          weight: 60
     params:
       footer: "<p>Copyright 2024 - 2025 Cyrus Yip. All rights reserved.</p>"
       # See https://gohugo.io/functions/time/format/
@@ -58,9 +55,6 @@ languages:
         - name: 关于
           pageRef: /about
           weight: 50
-        - name: English
-          url: /en
-          weight: 60
     params:
       # See https://gohugo.io/functions/time/format/
       DateFormat: 2006年1月02日
@@ -71,4 +65,4 @@ params:
 module:
   hugoVersion:
     extended: true
-    min: 0.116.0
+    min: 0.124.0
