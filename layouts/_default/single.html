@@ -5,7 +5,7 @@
   {{ $dateHuman := .Date | time.Format (or site.Params.DateFormat "2006-01-02") }}
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
-  {{ partial "i18nlist.html" . }}
+  {{ partial "i18n-list.html" . }}
 
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
