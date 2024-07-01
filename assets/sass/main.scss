@@ -61,20 +61,30 @@ header {
   flex-direction: column;
   align-items: center;
 
-  >nav>ul {
+  >nav.nav-list {
     display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
+    flex-direction: row;
+    column-gap: 10px;
 
-    // menu
-    >li>a {
-      background-color: #eee;
-      border-radius: 0.3rem;
-      padding: 0.3rem;
+    >nav.menu,
+    nav.language-selector {
+      >ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        list-style: none;
+        padding: 0;
 
-      &.active {
-        text-decoration-line: underline;
+        // menu
+        >li>a {
+          background-color: #eee;
+          border-radius: 0.3rem;
+          padding: 0.3rem;
+
+          &.active {
+            text-decoration-line: underline;
+          }
+        }
       }
     }
   }
