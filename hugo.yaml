@@ -1,6 +1,7 @@
 baseURL: https://example.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
+enableGitInfo: true
 
 languages:
   en:
@@ -61,6 +62,9 @@ languages:
 
 params:
   ShowFullTextInRSS: true
+
+frontmatter:
+  lastmod: ['lastmod', ':default']
 
 module:
   hugoVersion:
