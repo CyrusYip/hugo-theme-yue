@@ -61,29 +61,23 @@ header {
   flex-direction: column;
   align-items: center;
 
-  >nav.nav-list {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+  >nav.menu.language-selector {
+    >ul {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      list-style-type: none;
+      padding-inline-start: 0;
+      flex-wrap: wrap;
 
-    >nav.menu,
-    nav.language-selector {
-      >ul {
-        display: flex;
-        flex-direction: row;
-        column-gap: 10px;
-        list-style: none;
-        padding: 0;
+      // menu
+      >li>a {
+        background-color: #eee;
+        border-radius: 0.3rem;
+        padding: 0.3rem;
 
-        // menu
-        >li>a {
-          background-color: #eee;
-          border-radius: 0.3rem;
-          padding: 0.3rem;
-
-          &.active {
-            text-decoration-line: underline;
-          }
+        &.active {
+          text-decoration-line: underline;
         }
       }
     }
@@ -91,7 +85,7 @@ header {
 }
 
 // reset translation list
-main > ul.translations {
+main>ul.translations {
   padding-inline-start: 0;
   list-style-type: none;
 }

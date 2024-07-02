@@ -1,11 +1,9 @@
 {{ if hugo.IsMultilingual }}
-  <nav class="language-selector">
-  <ul>
   {{ if .IsTranslated -}}
   {{ range .Translations -}}
   <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
   {{ end -}}
-  {{ else -}}
+{{ else -}}
   {{ range site.Languages -}}
   {{- /* ignore current language */ -}}
   {{ if ne site.Language.Lang .Lang -}}
@@ -13,6 +11,4 @@
   {{ end -}}
   {{ end -}}
   {{ end -}}
-  </ul>
-  </nav>
 {{ end }}
