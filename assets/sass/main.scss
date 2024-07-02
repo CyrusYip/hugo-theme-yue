@@ -26,7 +26,8 @@ custom properties
   --body-max-width: 768px;
 }
 
-// $body-breakpoint: calc(var(--body-max-width) + var(--body-margin) * 2) ;
+// $body-breakpoint: calc(var(--body-max-width) + var(--body-margin) * 2) 
+// $body-breakpoint = 768 (maximum body width) + 16(margin-left) + 16 (margin-right) = 800
 $body-breakpoint: 800px;
 
 /*
