@@ -1,24 +1,63 @@
 baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
 
-menus:
-  main:
-    - name: Home
-      pageRef: /
-      weight: 10
-    - name: Posts
-      pageRef: /posts
-      weight: 20
-    - name: Tags
-      pageRef: /tags
-      weight: 30
-    - name: Categories
-      pageRef: /categories
-      weight: 40
-    - name: About
-      pageRef: /about
-      weight: 50
+languages:
+  en:
+    contentDir: content/en
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    title: My New English Site
+    weight: 1
+    menus:
+      main:
+        - name: Home
+          pageRef: /
+          weight: 10
+        - name: Posts
+          pageRef: /posts
+          weight: 20
+        - name: Tags
+          pageRef: /tags
+          weight: 30
+        - name: Categories
+          pageRef: /categories
+          weight: 40
+        - name: About
+          pageRef: /about
+          weight: 50
+    params:
+      footer: "<p>Copyright 2024 - 2025 Cyrus Yip. All rights reserved.</p>"
+      # See https://gohugo.io/functions/time/format/
+      DateFormat: Jan 02, 2006
+  zh-CN:
+    contentDir: content/zh-CN
+    languageCode: zh-CN
+    languageDirection: ltr
+    languageName: 中文
+    title: 中文网站
+    weight: 2
+    menus:
+      main:
+        - name: 主页
+          pageRef: /
+          weight: 10
+        - name: 文章
+          pageRef: /posts
+          weight: 20
+        - name: 标签
+          pageRef: /tags
+          weight: 30
+        - name: 类别
+          pageRef: /categories
+          weight: 40
+        - name: 关于
+          pageRef: /about
+          weight: 50
+    params:
+      # See https://gohugo.io/functions/time/format/
+      DateFormat: 2006年1月02日
 
 params:
   ShowFullTextInRSS: true
@@ -26,4 +65,4 @@ params:
 module:
   hugoVersion:
     extended: true
-    min: 0.116.0
+    min: 0.124.0

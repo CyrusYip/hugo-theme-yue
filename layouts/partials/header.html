@@ -1,2 +1,7 @@
 <h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  <nav class="menu language-selector">
+    <ul>
+    {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+    {{- partial "language-selector.html" . -}}
+    </ul>
+  </nav>

@@ -61,23 +61,33 @@ header {
   flex-direction: column;
   align-items: center;
 
-  >nav>ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
+  >nav.menu.language-selector {
+    >ul {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      list-style-type: none;
+      padding-inline-start: 0;
+      flex-wrap: wrap;
 
-    // menu
-    >li>a {
-      background-color: #eee;
-      border-radius: 0.3rem;
-      padding: 0.3rem;
+      // menu
+      >li>a {
+        background-color: #eee;
+        border-radius: 0.3rem;
+        padding: 0.3rem;
 
-      &.active {
-        text-decoration-line: underline;
+        &.active {
+          text-decoration-line: underline;
+        }
       }
     }
   }
+}
+
+// reset translation list
+main>ul.translations {
+  padding-inline-start: 0;
+  list-style-type: none;
 }
 
 // stretch <main> to avoid additional space below <footer>
@@ -90,8 +100,7 @@ body {
 
 // center footer
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 /*
