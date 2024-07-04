@@ -21,6 +21,10 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] customize footer
 - [x] customize date format
 - [x] language selector
+- [ ] paginator
+    - [x] homepage
+    - [ ] non-homepage
+    - [ ] TODO: move paginator the to the bottom, just above `<footer>`
 
 ## Installation
 

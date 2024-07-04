@@ -1,7 +1,13 @@
 {{ define "main" }}
+{{ $pages := site.RegularPages }}
+{{ $homePagerSize := or site.Params.homePagerSize 10 }}
+{{ $paginator := .Paginate $pages $homePagerSize }}
   {{ .Content }}
-  {{ range site.RegularPages }}
+  {{ range $paginator.Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }}
+  <nav class="paginator">
+  {{- template "_internal/pagination.html" . }}
+  </nav>
 {{ end }}

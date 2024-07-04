@@ -62,6 +62,7 @@ languages:
 
 params:
   ShowFullTextInRSS: true
+  homePagerSize: 1
 
 frontmatter:
   lastmod: ['lastmod', ':default']
