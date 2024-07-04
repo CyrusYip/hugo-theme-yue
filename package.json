@@ -12,7 +12,11 @@
     "clean:server:production": "npm run clean; npm run server:production",
     "clean:build": "npm run clean; npm run build"
   },
-  "dependencies": {
-    "hugo-extended": "^0.124.1"
+  "hugo-bin": {
+    "buildTags": "extended",
+    "version": "0.128.1"
+  },
+  "devDependencies": {
+    "hugo-bin": "^0.125.1"
   }
 }

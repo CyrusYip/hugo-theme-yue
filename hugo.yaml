@@ -69,4 +69,4 @@ frontmatter:
 module:
   hugoVersion:
     extended: true
-    min: 0.124.0
+    min: 0.128.1
