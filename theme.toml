@@ -1,4 +1,4 @@
-name = 'Theme name'
+name = 'Yue'
 license = 'MIT'
 licenselink = 'https://github.com/owner/repo/LICENSE'
 description = 'Theme description'
@@ -10,22 +10,10 @@ homepage = 'https://github.com/owner/repo'
 demosite = 'https://owner.github.io/repo'
 
 # Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
+tags = ['blog', 'multilangual']
+# features = ['some', 'awesome', 'features']
 
 # If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
+  name = 'Cyrus Yip'
+  homepage = 'https://cyrusyip.org/'

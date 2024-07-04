@@ -1,8 +1,6 @@
 {
-  "name": "hugo-theme-moon",
+  "name": "Yue",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "server": "hugo server --navigateToChanged",
     "server:local": "hugo server --navigateToChanged --bind 0.0.0.0",
@@ -14,8 +12,6 @@
     "clean:server:production": "npm run clean; npm run server:production",
     "clean:build": "npm run clean; npm run build"
   },
-  "author": "Cyrus Yip",
-  "license": "MIT",
   "dependencies": {
     "hugo-extended": "^0.124.1"
   }
