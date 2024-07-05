@@ -22,7 +22,7 @@ custom properties
   --border: 1px solid var(--text-color);
   --font-family: sans-serif;
   --line-height: 1.5;
-  --link-color: #00e;
+  --link-color: darkviolet;
   --body-max-width: 768px;
 }
 
@@ -67,14 +67,8 @@ header>nav.menu.language-selector {
     flex-wrap: wrap;
 
     // menu
-    >li>a {
-      background-color: #eee;
-      border-radius: 0.3rem;
-      padding: 0.3rem;
-
-      &.active {
-        text-decoration-line: underline;
-      }
+    >li>a.active {
+      font-weight: bold;
     }
   }
 }
