@@ -62,8 +62,8 @@ languages:
 
 params:
   ShowFullTextInRSS: true
-  homePagerSize: 1
-  sectionPagerSize: 2 # default: 10
+  homePagerSize: 5
+  sectionPagerSize: 9999 # default: 10
 
 frontmatter:
   lastmod: ['lastmod', ':default']
