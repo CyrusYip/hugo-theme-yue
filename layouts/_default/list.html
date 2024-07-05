@@ -13,6 +13,14 @@
   <nav class="paginator">
   {{- template "_internal/pagination.html" . }}
   </nav>
+{{- /* sort taxonomy by LinkTitle */ -}}
+{{ else if eq .Kind "taxonomy" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages.ByLinkTitle }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{- /* {{ .Summary }} */ -}}
+  {{ end }}
 {{ else }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
