@@ -12,7 +12,7 @@
   >
 
   {{ partial "i18n-list.html" . }}
-
+  {{ partial "toc.html" . }}
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
