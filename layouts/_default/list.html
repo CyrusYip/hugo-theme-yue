@@ -1,8 +1,32 @@
 {{ define "main" }}
+{{- /* only paginate section */ -}}
+{{ if eq .Kind "section"}}
+{{ $pages := .Pages }}
+{{ $sectionPagerSize := or site.Params.sectionPagerSize 10 }}
+{{ $paginator := .Paginate $pages $sectionPagerSize }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range $paginator.Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{- /* {{ .Summary }} */ -}}
+  {{ end }}
+  <nav class="paginator">
+  {{- template "_internal/pagination.html" . }}
+  </nav>
+{{- /* sort taxonomy by LinkTitle */ -}}
+{{ else if eq .Kind "taxonomy" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages.ByLinkTitle }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{- /* {{ .Summary }} */ -}}
+  {{ end }}
+{{ else }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    {{- /* {{ .Summary }} */ -}}
   {{ end }}
+{{ end }}
 {{ end }}

@@ -85,6 +85,14 @@ main>ul.translations {
   list-style-type: none;
 }
 
+// paginator
+main>nav.paginator>ul.pagination {
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
 // stretch <main> to avoid additional space below <footer>
 body {
   display: grid;
