@@ -1,7 +1,13 @@
 {{ $author := default site.Params.author .Params.author }}
 {{- with $author -}}
+{{- /* string or []string */ -}}
+{{- $authorType := printf "%T" $author -}}
 <span class="author">
-{{- . -}}
+{{- if eq $authorType "string" -}}
+  {{- . -}}
+{{- else if eq $authorType "[]string" -}}
+  {{- delimit $author (i18n "authorDelimiter") -}}
+{{- end -}}
 </span>
 <br>
-{{ end }}
+{{- end -}}
