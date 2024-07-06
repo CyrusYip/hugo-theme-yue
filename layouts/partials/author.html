@@ -1,0 +1,7 @@
+{{ $author := default site.Params.author .Params.author }}
+{{- with $author -}}
+<span class="author">
+{{- . -}}
+</span>
+<br>
+{{ end }}

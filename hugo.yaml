@@ -37,6 +37,7 @@ languages:
       footer: "<p>Copyright 2024 - 2025 Cyrus Yip. All rights reserved.</p>"
       # See https://gohugo.io/functions/time/format/
       DateFormat: Jan 02, 2006
+      author: Cyrus Yip # default author
   zh-CN:
     contentDir: content/zh-CN
     languageCode: zh-CN
@@ -64,6 +65,7 @@ languages:
     params:
       # See https://gohugo.io/functions/time/format/
       DateFormat: 2006年1月02日
+      author: 叶寻 # default author
 
 params:
   ShowFullTextInRSS: true
