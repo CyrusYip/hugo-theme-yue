@@ -26,6 +26,7 @@ To use recommended Hugo version, run `npx hugo`.
     - [x] section
     - [ ] ~~TODO: move paginator the to the bottom, just above `<footer>`~~
 - [x] author in single page (single or list)
+- [x] 404 page
 
 ## Installation
 
