@@ -2,4 +2,6 @@
 404Message: 找不到你访问的页面。
 authorDelimiter: 、
 lastmod: "（修改于%s）"
+nextPage: "下篇："
+previousPage: "上篇："
 tableOfContents: 目次

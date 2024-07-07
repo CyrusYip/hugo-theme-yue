@@ -2,4 +2,6 @@
 404Message: The page you visited was not found.
 authorDelimiter: ", "
 lastmod: " (Modified: %s)"
+nextPage: "Next: "
+previousPage: "Prev: "
 tableOfContents: Table of Contents

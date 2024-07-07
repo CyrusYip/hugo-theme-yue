@@ -85,6 +85,13 @@ main>nav.paginator>ul.pagination {
   gap: 16px;
 }
 
+// page nav
+main>nav.page-nav {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 16px;
+}
+
 
 // stretch <main> to avoid additional space below <footer>
 body {
