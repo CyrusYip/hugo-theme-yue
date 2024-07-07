@@ -1,8 +1,11 @@
-<nav class="page-nav">
-  {{- with .Next }}
-    <a href="{{ .RelPermalink }}">{{ i18n "previousPage" }}{{.Title}}</a>
-  {{- end }}
-  {{- with .Prev }}
-    <a href="{{ .RelPermalink }}">{{ i18n "nextPage" }}{{.Title}}</a>
-  {{- end }}
-</nav>
+{{- $pages := where site.RegularPages "Section" "ne" "" -}} {{- /* exclude non-section pages, e.g. /content/about.md */ -}}
+{{ if or ($pages.Next .) ($pages.Prev .) }}
+  <nav class="page-nav">
+    {{- with $pages.Next . }}
+      <a href="{{ .RelPermalink }}">{{ i18n "previousPage" }}{{.Title}}</a>
+    {{- end }}
+    {{- with $pages.Prev . }}
+      <a href="{{ .RelPermalink }}">{{ i18n "nextPage" }}{{.Title}}</a>
+    {{- end }}
+  </nav>
+{{ end }}

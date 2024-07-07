@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $pages := site.RegularPages }}
+{{ $pages := where site.RegularPages "Section" "ne" "" }} {{- /* exclude non-section pages, e.g. /content/about.md */ -}}
 {{ $homePagerSize := or site.Params.homePagerSize 10 }}
 {{ $paginator := .Paginate $pages $homePagerSize }}
   {{ .Content }}
