@@ -36,7 +36,7 @@ languages:
     params:
       footer: "<p>Copyright 2024 - 2025 Cyrus Yip. All rights reserved.</p>"
       # See https://gohugo.io/functions/time/format/
-      DateFormat: Jan 02, 2006
+      dateFormat: Jan 02, 2006
       author: Cyrus Yip # default author, supports single value or list
   zh-CN:
     contentDir: content/zh-CN
@@ -64,11 +64,11 @@ languages:
           weight: 50
     params:
       # See https://gohugo.io/functions/time/format/
-      DateFormat: 2006年1月02日
+      dateFormat: 2006年1月02日
       author: 叶寻 # default author, supports single value or list
 
 params:
-  ShowFullTextInRSS: true
+  showFullTextInRSS: true
   homePagerSize: 5
   sectionPagerSize: 9999 # default: 10
   toc: true # Table of Contents
