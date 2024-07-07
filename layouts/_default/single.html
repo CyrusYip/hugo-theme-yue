@@ -11,7 +11,7 @@
     >{{ printf (i18n "lastmod") $lastmodHuman }}</time
   >
 
-  {{ partial "i18n-list.html" . }}
+  {{ partial "i18n_list.html" . }}
   {{ partial "toc.html" . }}
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
