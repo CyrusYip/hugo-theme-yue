@@ -1,16 +1,7 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ partial "author.html" . }}
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format (or site.Params.dateFormat "2006-01-02") }}
-  {{ $lastmodMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $lastmodHuman := .Lastmod | time.Format (or site.Params.dateFormat "2006-01-02") }}
-  <time class="published-date" datetime="{{ $dateMachine }}"
-    >{{ $dateHuman }}</time
-  ><time class="lastmod-date" datetime="{{ $lastmodMachine }}"
-    >{{ printf (i18n "lastmod") $lastmodHuman }}</time
-  >
-
+  {{ partial "date.html" . }}{{ partial "lastmod.html" . }}
   {{ partial "i18n_list.html" . }}
   {{ partial "toc.html" . }}
   {{ .Content }}
