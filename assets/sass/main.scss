@@ -92,6 +92,10 @@ main>nav.page-nav {
   margin-block-end: 16px;
 }
 
+// section
+main>h2.section-post-title {
+  margin-block-start: 0;
+}
 
 // stretch <main> to avoid additional space below <footer>
 body {
