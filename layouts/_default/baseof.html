@@ -3,14 +3,14 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <header>
+<body class="body">
+  <header class="header">
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main class="main">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
+  <footer class="footer">
     {{ partial "footer.html" . }}
   </footer>
 </body>

@@ -9,7 +9,7 @@ CSS Reset
   box-sizing: border-box;
 }
 
-body {
+.body {
   margin: 0;
 }
 
@@ -28,7 +28,7 @@ $desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum b
 /*
 global styles
 */
-body {
+.body {
   color: $text-color;
   font-family: $font-family;
   line-height: $line-height;
@@ -36,11 +36,11 @@ body {
   margin-right: $body-margin;
 }
 
-header {
+.header {
   border-bottom: $border;
 }
 
-footer {
+.footer {
   border-top: $border;
 }
 
@@ -93,7 +93,7 @@ main>h2.section-post-title {
 }
 
 // stretch <main> to avoid additional space below <footer>
-body {
+.body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh; // vh for old browsers that don't support dvh
@@ -104,7 +104,7 @@ body {
 desktop styles
 */
 @media (min-width: $desktop-breakpoint) {
-  body {
+  .body {
     width: $body-max-width;
     margin-left: auto;
     margin-right: auto;
