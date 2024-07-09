@@ -1,4 +1,7 @@
-/* Styles should be mobile first. */
+/*
+Top-level styles are mobile first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier)
+*/
 
 /*
 CSS Reset
@@ -34,6 +37,14 @@ global styles
   line-height: $line-height;
   margin-left: $body-margin;
   margin-right: $body-margin;
+}
+
+// stretch <main> to avoid additional space below <footer>
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; // vh for old browsers that don't support dvh
+  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
 }
 
 .header {
@@ -87,17 +98,10 @@ a {
   margin-block-start: 0;
 }
 
-// stretch <main> to avoid additional space below <footer>
-.body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh; // vh for old browsers that don't support dvh
-  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
-}
-
 /*
 desktop styles
 */
+// fix width on desktop screen
 @media (min-width: $desktop-breakpoint) {
   .body {
     width: $body-max-width;

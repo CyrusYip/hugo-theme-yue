@@ -28,6 +28,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] author in single page (single or list)
 - [x] 404 page
 - [x] lastmod in section list and page
+- [x] CSS BEM (Block, Element, Modifier)
 
 ## Installation
 
