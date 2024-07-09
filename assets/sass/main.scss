@@ -72,9 +72,12 @@ a {
   }
 
   // selected link
-  &__link--active,
-  &__link--ancestor {
-    font-weight: bold;
+  &__link {
+
+    &--active,
+    &--ancestor {
+      font-weight: bold;
+    }
   }
 }
 
