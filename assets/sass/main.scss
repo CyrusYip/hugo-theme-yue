@@ -50,19 +50,20 @@ a {
 }
 
 // menu and language selector
-header>nav.menu.language-selector {
-  >ul {
+.menu {
+  &__list {
     display: flex;
     flex-direction: row;
     gap: 10px;
     list-style-type: none;
     padding-inline-start: 0;
     flex-wrap: wrap;
+  }
 
-    // menu
-    >li>a.active {
-      font-weight: bold;
-    }
+  // selected link
+  &__link--active,
+  &__link--ancestor {
+    font-weight: bold;
   }
 }
 
