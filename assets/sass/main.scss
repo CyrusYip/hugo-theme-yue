@@ -68,7 +68,7 @@ a {
 }
 
 // paginator
-main>nav.paginator>ul.pagination {
+.pagination {
   padding-inline-start: 0;
   list-style-type: none;
   display: flex;
@@ -76,14 +76,14 @@ main>nav.paginator>ul.pagination {
 }
 
 // page nav
-main>nav.page-nav {
+.page-nav {
   display: flex;
   flex-direction: column;
   margin-block-end: 16px;
 }
 
 // section
-main>h2.section-post-title {
+.section-post-title {
   margin-block-start: 0;
 }
 
