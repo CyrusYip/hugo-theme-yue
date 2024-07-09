@@ -77,9 +77,7 @@ a {
 
   // selected link
   &__link {
-
-    &--active,
-    &--ancestor {
+    &--active {
       font-weight: bold;
     }
   }
