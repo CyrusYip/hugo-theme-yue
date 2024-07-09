@@ -16,6 +16,11 @@ CSS Reset
   margin: 0;
 }
 
+%list-reset {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
 /*
 variables
 */
@@ -63,11 +68,10 @@ a {
 // menu and language selector
 .menu {
   &__list {
+    @extend %list-reset;
     display: flex;
     flex-direction: row;
     gap: 10px;
-    list-style-type: none;
-    padding-inline-start: 0;
     flex-wrap: wrap;
   }
 
@@ -83,8 +87,7 @@ a {
 
 // paginator
 .pagination {
-  padding-inline-start: 0;
-  list-style-type: none;
+  @extend %list-reset;
   display: flex;
   gap: 16px;
 }
