@@ -14,43 +14,38 @@ body {
 }
 
 /*
-custom properties
+variables
 */
-:root {
-  --text-color: #222;
-  --body-margin: 1rem;
-  --border: 1px solid var(--text-color);
-  --font-family: sans-serif;
-  --line-height: 1.5;
-  --link-color: darkviolet;
-  --body-max-width: 768px;
-}
-
-// $body-breakpoint: calc(var(--body-max-width) + var(--body-margin) * 2) 
-// $body-breakpoint = 768 (maximum body width) + 16(margin-left) + 16 (margin-right) = 800
-$body-breakpoint: 800px;
+$text-color: #222222;
+$border: 1px solid $text-color;
+$body-margin: 16px;
+$font-family: sans-serif;
+$line-height: 1.5;
+$link-color: darkviolet;
+$body-max-width: 768px;
+$desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum body width + margin-left + margin-right
 
 /*
 global styles
 */
 body {
-  color: var(--text-color);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
-  margin-left: var(--body-margin);
-  margin-right: var(--body-margin);
+  color: $text-color;
+  font-family: $font-family;
+  line-height: $line-height;
+  margin-left: $body-margin;
+  margin-right: $body-margin;
 }
 
 header {
-  border-bottom: var(--border);
+  border-bottom: $border;
 }
 
 footer {
-  border-top: var(--border);
+  border-top: $border;
 }
 
 a {
-  color: var(--link-color);
+  color: $link-color;
   text-decoration: none;
 }
 
@@ -108,9 +103,9 @@ body {
 /*
 desktop styles
 */
-@media (min-width: $body-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   body {
-    width: var(--body-max-width);
+    width: $body-max-width;
     margin-left: auto;
     margin-right: auto;
   }
