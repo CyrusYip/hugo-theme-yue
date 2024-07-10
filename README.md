@@ -29,6 +29,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] 404 page
 - [x] lastmod in section list and page
 - [x] CSS BEM (Block, Element, Modifier)
+- [x] gruvbox color scheme
 
 ## Installation
 

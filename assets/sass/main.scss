@@ -16,6 +16,10 @@ CSS Reset
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 %list-reset {
   list-style-type: none;
   padding-inline-start: 0;
@@ -24,20 +28,20 @@ CSS Reset
 /*
 variables
 */
-$text-color: #222222;
-$border: 1px solid $text-color;
 $body-margin: 16px;
 $font-family: sans-serif;
 $line-height: 1.5;
-$link-color: darkviolet;
 $body-max-width: 768px;
 $desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum body width + margin-left + margin-right
+$background-color: #fbf1c7;
+$foreground-color: #3c3836;
+$link-color: #af3a03; // gruvbox orange
+$border: 1px solid $foreground-color;
 
 /*
 global styles
 */
 .body {
-  color: $text-color;
   font-family: $font-family;
   line-height: $line-height;
   margin-left: $body-margin;
@@ -52,17 +56,31 @@ global styles
   min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
 }
 
+// color
+.body {
+  background-color: $background-color;
+  color: $foreground-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $foreground-color;
+}
+
+a {
+  color: $link-color;
+}
+
 .header {
   border-bottom: $border;
 }
 
 .footer {
   border-top: $border;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
 }
 
 // menu and language selector
