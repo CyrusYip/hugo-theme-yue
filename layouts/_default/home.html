@@ -4,8 +4,8 @@
 {{ $paginator := .Paginate $pages $homePagerSize }}
   {{ .Content }}
   {{ range $paginator.Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    <h2 class="home-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <p class="summary">{{ .Summary }}</p>
   {{ end }}
   <nav class="paginator">
   {{- template "_internal/pagination.html" . }}

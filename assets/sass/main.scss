@@ -136,6 +136,16 @@ a {
   margin-block-start: 0;
 }
 
+// Home
+.home-post-title {
+  // Make title close to summary
+  margin-block-end: 0;
+}
+
+.summary {
+  margin-block-start: 0;
+}
+
 /* Desktop styles */
 // Fix width on desktop screen
 @media (min-width: $desktop-breakpoint) {
