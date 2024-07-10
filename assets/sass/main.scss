@@ -38,22 +38,10 @@ $foreground-color: #3c3836;
 $link-color: #af3a03; // gruvbox orange
 $border: 1px solid $foreground-color;
 
-/*
-global styles
-*/
-.body {
-  font-family: $font-family;
-  line-height: $line-height;
-  margin-left: $body-margin;
-  margin-right: $body-margin;
-}
-
-// stretch <main> to avoid additional space below <footer>
-.body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh; // vh for old browsers that don't support dvh
-  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
+@media (prefers-color-scheme: dark) {
+  $background-color: #282828;
+  $foreground-color: #3bdbb2;
+  $link-color: #fe8019; // orange
 }
 
 // color
@@ -82,6 +70,25 @@ a {
 .footer {
   border-top: $border;
 }
+
+/*
+global styles
+*/
+.body {
+  font-family: $font-family;
+  line-height: $line-height;
+  margin-left: $body-margin;
+  margin-right: $body-margin;
+}
+
+// stretch <main> to avoid additional space below <footer>
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; // vh for old browsers that don't support dvh
+  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
+}
+
 
 // menu and language selector
 .menu {
