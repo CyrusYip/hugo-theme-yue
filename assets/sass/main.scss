@@ -39,9 +39,10 @@ $link-color: #af3a03; // gruvbox orange
 $border: 1px solid $foreground-color;
 
 @media (prefers-color-scheme: dark) {
-  $background-color: #282828;
-  $foreground-color: #3bdbb2;
-  $link-color: #fe8019; // orange
+  $background-color: #282828 !global;
+  $foreground-color: #ebdbb2 !global;
+  $link-color: #fe8019 !global; // orange
+  $border: 1px solid $foreground-color !global;
 }
 
 // color
