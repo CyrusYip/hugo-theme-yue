@@ -33,22 +33,36 @@ $font-family: sans-serif;
 $line-height: 1.5;
 $body-max-width: 768px;
 $desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum body width + margin-left + margin-right
-$background-color: #fbf1c7;
-$foreground-color: #3c3836;
-$link-color: #af3a03; // gruvbox orange
-$border: 1px solid $foreground-color;
 
-@media (prefers-color-scheme: dark) {
-  $background-color: #282828 !global;
-  $foreground-color: #ebdbb2 !global;
-  $link-color: #fe8019 !global; // orange
-  $border: 1px solid $foreground-color !global;
+/* gruvbox color scheme */
+$light-background-color: #fbf1c7;
+$light-foreground-color: #3c3836;
+$light-link-color: #af3a03; // orange
+
+$dark-background-color: #282828;
+$dark-foreground-color: #ebdbb2;
+$dark-link-color: #fe8019; // orange
+
+// light theme by default
+:root {
+  --background-color: #{$light-background-color};
+  --foreground-color: #{$light-foreground-color};
+  --link-color: #{$light-link-color};
 }
 
-// color
+// override variables for dark theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #{$dark-background-color};
+    --foreground-color: #{$dark-foreground-color};
+    --link-color: #{$dark-link-color};
+  }
+}
+
+// set color
 .body {
-  background-color: $background-color;
-  color: $foreground-color;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
 }
 
 h1,
@@ -57,20 +71,21 @@ h3,
 h4,
 h5,
 h6 {
-  color: $foreground-color;
+  color: var(--foreground-color);
 }
 
 a {
-  color: $link-color;
+  color: var(--link-color);
 }
 
 .header {
-  border-bottom: $border;
+  border-bottom: 1px solid var(--foreground-color);
 }
 
 .footer {
-  border-top: $border;
+  border-top: 1px solid var(--foreground-color);
 }
+
 
 /*
 global styles
