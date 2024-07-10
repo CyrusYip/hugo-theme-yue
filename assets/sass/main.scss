@@ -1,4 +1,7 @@
-/* Styles should be mobile first. */
+/*
+Top-level styles are mobile first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier)
+*/
 
 /*
 CSS Reset
@@ -9,8 +12,13 @@ CSS Reset
   box-sizing: border-box;
 }
 
-body {
+.body {
   margin: 0;
+}
+
+%list-reset {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 /*
@@ -28,7 +36,7 @@ $desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum b
 /*
 global styles
 */
-body {
+.body {
   color: $text-color;
   font-family: $font-family;
   line-height: $line-height;
@@ -36,11 +44,19 @@ body {
   margin-right: $body-margin;
 }
 
-header {
+// stretch <main> to avoid additional space below <footer>
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; // vh for old browsers that don't support dvh
+  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
+}
+
+.header {
   border-bottom: $border;
 }
 
-footer {
+.footer {
   border-top: $border;
 }
 
@@ -50,61 +66,48 @@ a {
 }
 
 // menu and language selector
-header>nav.menu.language-selector {
-  >ul {
+.menu {
+  &__list {
+    @extend %list-reset;
     display: flex;
     flex-direction: row;
     gap: 10px;
-    list-style-type: none;
-    padding-inline-start: 0;
     flex-wrap: wrap;
+  }
 
-    // menu
-    >li>a.active {
+  // selected link
+  &__link {
+    &--active {
       font-weight: bold;
     }
   }
 }
 
-// reset translation list
-main>ul.translations {
-  padding-inline-start: 0;
-  list-style-type: none;
-}
-
 // paginator
-main>nav.paginator>ul.pagination {
-  padding-inline-start: 0;
-  list-style-type: none;
+.pagination {
+  @extend %list-reset;
   display: flex;
   gap: 16px;
 }
 
 // page nav
-main>nav.page-nav {
+.page-nav {
   display: flex;
   flex-direction: column;
   margin-block-end: 16px;
 }
 
 // section
-main>h2.section-post-title {
+.section-post-title {
   margin-block-start: 0;
-}
-
-// stretch <main> to avoid additional space below <footer>
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh; // vh for old browsers that don't support dvh
-  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
 }
 
 /*
 desktop styles
 */
+// fix width on desktop screen
 @media (min-width: $desktop-breakpoint) {
-  body {
+  .body {
     width: $body-max-width;
     margin-left: auto;
     margin-right: auto;

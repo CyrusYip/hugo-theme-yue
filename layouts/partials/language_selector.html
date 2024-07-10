@@ -1,14 +1,15 @@
 {{ if hugo.IsMultilingual }}
   {{ if .IsTranslated -}}
-  {{ range .Translations -}}
-  <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
-  {{ end -}}
-{{ else -}}
-  {{ range site.Languages -}}
-  {{- /* ignore current language */ -}}
-  {{ if ne site.Language.Lang .Lang -}}
-  <li><a href="{{ .Lang | relURL }}">{{ .LanguageName }}</a></li>
-  {{ end -}}
-  {{ end -}}
+  {{- /* link to translated page */ -}}
+    {{ range .Translations -}}
+      <li class="menu__item"><a class="menu__link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+    {{ end -}}
+  {{ else -}}
+  {{- /* link to home page */ -}}
+    {{ range site.Languages -}}
+      {{ if ne site.Language.Lang .Lang -}} {{- /* ignore current language */ -}}
+        <li class="menu__item"><a class="menu__link" href="{{ .Lang | relURL }}">{{ .LanguageName }}</a></li>
+      {{ end -}}
+    {{ end -}}
   {{ end -}}
 {{ end }}
