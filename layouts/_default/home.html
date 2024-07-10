@@ -5,7 +5,13 @@
   {{ .Content }}
   {{ range $paginator.Pages }}
     <h2 class="home-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    <p class="summary">{{ .Summary }}</p>
+    {{ with .Summary }}
+    {{- /*
+    Create deterministic summary output for styling.
+    See https://github.com/gohugoio/hugo/issues/8910
+    */ -}}
+    <p class="summary">{{ . | plainify | htmlUnescape | chomp }}</p>
+    {{- end }}
   {{ end }}
   <nav class="paginator">
   {{- template "_internal/pagination.html" . }}
