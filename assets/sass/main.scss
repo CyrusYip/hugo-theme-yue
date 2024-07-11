@@ -26,6 +26,7 @@ a {
 /* Variables */
 $body-margin: 16px;
 $font-family: sans-serif;
+$base-font-size: 18px;
 $line-height: 1.5;
 $body-max-width: 768px;
 $desktop-breakpoint: $body-max-width + $body-margin + $body-margin; // maximum body width + margin-left + margin-right
@@ -98,6 +99,11 @@ a {
 }
 
 /* Styles */
+// base font size
+.html {
+  font-size: $base-font-size;
+}
+
 // Menu and language selector
 .menu {
   &__list {
@@ -141,6 +147,7 @@ a {
   // Make title close to summary
   margin-block-end: 0;
 }
+
 .summary {
   margin-block-start: 0;
 }
