@@ -18,11 +18,6 @@ a {
   text-decoration: none;
 }
 
-%list-reset {
-  list-style-type: none;
-  padding-inline-start: 0;
-}
-
 /* Variables */
 $body-margin: 16px !default;
 $font-family: sans-serif !default;
@@ -107,7 +102,8 @@ a {
 // Menu and language selector
 .menu {
   &__list {
-    @extend %list-reset;
+    list-style-type: none;
+    padding-inline-start: 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -124,7 +120,8 @@ a {
 
 // Paginator
 .pagination {
-  @extend %list-reset;
+  list-style-type: none;
+  padding-inline-start: 0;
   display: flex;
   gap: 16px;
 }
