@@ -1,0 +1,163 @@
+/*
+Top-level styles are mobile first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier)
+*/
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+%list-reset {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* Variables */
+$body-margin: 16px !default;
+$font-family: sans-serif !default;
+$base-font-size: 18px !default;
+$line-height: 1.5 !default;
+$body-max-width: 768px !default;
+$desktop-breakpoint: $body-max-width + $body-margin + $body-margin !default; // maximum body width + margin-left + margin-right
+
+/* Color and border */
+$light-background-color: #fbf1c7 !default;
+$light-foreground-color: #3c3836 !default;
+$light-link-color: #af3a03 !default; // gruvbox orange
+$dark-background-color: #282828 !default;
+$dark-foreground-color: #ebdbb2 !default;
+$dark-link-color: #fe8019 !default; // gruvbox orange
+
+// Light theme by default
+:root {
+  --background-color: #{$light-background-color};
+  --foreground-color: #{$light-foreground-color};
+  --link-color: #{$light-link-color};
+}
+
+// Override variables for dark theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #{$dark-background-color};
+    --foreground-color: #{$dark-foreground-color};
+    --link-color: #{$dark-link-color};
+  }
+}
+
+// Set color
+.body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--foreground-color);
+}
+
+.footer {
+  border-top: 1px solid var(--foreground-color);
+}
+
+/* Layout */
+.body {
+  font-family: $font-family;
+  line-height: $line-height;
+  margin-left: $body-margin;
+  margin-right: $body-margin;
+}
+
+// Stretch <main> to avoid additional space below <footer>
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; // <header> <main> <footer>
+  min-height: 100vh; // vh for old browsers that don't support dvh
+  min-height: 100dvh; // dvh for avoiding scrollbar on mobile browsers
+}
+
+/* Styles */
+// base font size
+.html {
+  font-size: $base-font-size;
+}
+
+// Menu and language selector
+.menu {
+  &__list {
+    @extend %list-reset;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  // Selected link
+  &__link {
+    &--active {
+      font-weight: bold;
+    }
+  }
+}
+
+// Paginator
+.pagination {
+  @extend %list-reset;
+  display: flex;
+  gap: 16px;
+}
+
+// Page nav
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 16px;
+}
+
+// Section
+.section-post-title {
+  // Make title close to date info
+  margin-block-start: 0;
+}
+
+// Home
+.home-post-title {
+  // Make title close to summary
+  margin-block-end: 0;
+}
+
+.summary {
+  margin-block-start: 0;
+}
+
+/* Desktop styles */
+// Fix width on desktop screen
+@media (min-width: $desktop-breakpoint) {
+  .body {
+    width: $body-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -29,11 +29,16 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] 404 page
 - [x] lastmod in section list and page
 - [x] CSS BEM (Block, Element, Modifier)
-- [x] gruvbox color scheme (light mode and dark mode)
+- [x] gruvbox color scheme (automatic dark mode)
+- [x] customize styles via scss
 
 ## Installation
 
 ## Configuration
+
+### customize styles
+
+To customize styles, create `/assets/sass/_custom-start.scss` (applied first) and `/assets/sass/_custom-end.scss` (applied last) in your site. You can override variables in `_custom-start.scss`. Vanilla CSS is also valid in SCSS.
 
 ### title of `/tags` and `/categories`
 
