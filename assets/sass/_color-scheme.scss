@@ -1,0 +1,42 @@
+// Light theme by default
+:root {
+  --background-color: #{$background-color-light};
+  --foreground-color: #{$foreground-color-light};
+  --accent-color: #{$accent-color-light};
+}
+
+// Override variables for dark theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #{$background-color-dark};
+    --foreground-color: #{$foreground-color-dark};
+    --accent-color: #{$accent-color-dark};
+  }
+}
+
+// Set color
+.body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground-color);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--foreground-color);
+}
+
+.footer {
+  border-top: 1px solid var(--foreground-color);
+}

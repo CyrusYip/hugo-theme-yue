@@ -1,0 +1,55 @@
+// Global
+.html {
+  font-family: $font-family;
+  font-size: $base-font-size;
+  line-height: $line-height;
+}
+
+// Menu and language selector
+.menu {
+  &__list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  // Selected link
+  &__link {
+    &--active {
+      font-weight: bold;
+    }
+  }
+}
+
+// Paginator
+.pagination {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  gap: 16px;
+}
+
+// Page nav
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 16px;
+}
+
+// Make section post title close to date info
+.section-post-title {
+  margin-block-start: 0;
+}
+
+// Make home post title close to summary
+.home-post-title {
+  margin-block-end: 0;
+}
+
+// Make summary close to home post title
+.summary {
+  margin-block-start: 0;
+}

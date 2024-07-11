@@ -1,3 +1,12 @@
-@import 'custom-start';
-@import 'base';
+/*
+Styles are mobile-first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier)
+*/
+
+@import 'custom-start'; // variables can be overridden in this file
+@import 'init'; // variables
+@import 'reset';
+@import 'layout';
+@import 'color-scheme';
+@import 'style';
 @import 'custom-end';

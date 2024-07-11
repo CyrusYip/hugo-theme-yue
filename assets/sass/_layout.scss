@@ -1,0 +1,22 @@
+// On mobile, add little margins
+.body {
+  margin-left: $body-margin;
+  margin-right: $body-margin;
+}
+
+// On desktop, use fixed width and center <body>
+@media (min-width: $desktop-breakpoint) {
+  .body {
+    width: $body-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Stretch <main> to ensure <footer> stays at bottom
+.body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; // <header> <main> <footer>
+  min-height: 100vh; // fallback value if dvh is not supported
+  min-height: 100dvh; // Avoid scrollbar on mobile
+}
