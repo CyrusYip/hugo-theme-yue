@@ -1,13 +1,5 @@
-.DS_Store
-.RData
-.Rhistory
-.Rproj.user
-.Ruserdata
-.hugo_build.lock
-public
-resources/
-Thumbs.db
 node_modules/
-/envs/
-/.frontmatter/
-.idea
+/public
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
