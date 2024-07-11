@@ -1,11 +1,11 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ partial "author.html" . }}
-  {{ partial "date.html" . }}{{ partial "lastmod.html" . }}
-  {{ partial "i18n_list.html" . }}
-  {{ partial "toc.html" . }}
+  {{ partial "single/author.html" . }}
+  {{ partial "main/date.html" . }}{{ partial "main/lastmod.html" . }}
+  {{ partial "single/i18n_list.html" . }}
+  {{ partial "single/toc.html" . }}
   {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-  {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-  {{ partial "page_nav.html" . }}
+  {{ partial "single/terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ partial "single/terms.html" (dict "taxonomy" "categories" "page" .) }}
+  {{ partial "single/page_nav.html" . }}
 {{ end }}

@@ -1,3 +1,4 @@
+{{- /* Used by single.html and list.html */ -}}
 {{- $lastmodMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" -}}
 {{- $lastmodHuman := .Lastmod | time.Format (or site.Params.dateFormat "2006-01-02") -}}
 <time class="lastmod-date" datetime="{{ $lastmodMachine }}">{{ printf (i18n "lastmod") $lastmodHuman }}</time>

@@ -7,9 +7,9 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range $paginator.Pages }}
-    {{ partial "date.html" . }}{{ partial "lastmod.html" . }}
+    {{- /* show date and lastmod */ -}}
+    {{ partial "main/date.html" . }}{{ partial "main/lastmod.html" . }}
     <h2 class="section-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{- /* {{ .Summary }} */ -}}
   {{ end }}
   <nav class="paginator">
   {{- template "_internal/pagination.html" . }}
@@ -20,14 +20,12 @@
   {{ .Content }}
   {{ range .Pages.ByLinkTitle }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{- /* {{ .Summary }} */ -}}
   {{ end }}
 {{ else }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{- /* {{ .Summary }} */ -}}
   {{ end }}
 {{ end }}
 {{ end }}
