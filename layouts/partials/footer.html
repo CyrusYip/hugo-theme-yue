@@ -1,5 +1,1 @@
-{{ with site.Params.footer }}
-  {{ . | safeHTML }}
-{{ else }}
-  <p>Copyright {{ now.Format "2006" }}. All rights reserved.</p>
-{{ end }}
+{{ partial "footer/copyright.html" . }}

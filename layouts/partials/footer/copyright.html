@@ -1,0 +1,13 @@
+{{- $author := site.Params.footer.author }}
+{{- $yearStart := string site.Params.footer.yearStart }}
+{{- $yearEnd := string (default (now.Format "2006") site.Params.footer.yearEnd) }}
+{{- $yearSpan := "" }}
+{{- if not $yearStart }}
+  {{- /* Use $yearEnd if $yearStart doesn't exist */ -}}
+  {{- $yearSpan = $yearEnd }}
+{{- else if eq $yearStart $yearEnd }}
+  {{- $yearSpan = $yearEnd }}
+{{- else }}
+  {{- $yearSpan = printf "%s-%s" $yearStart $yearEnd }}
+{{- end -}}
+<p class="copyright-notice">&copy; {{ $yearSpan }} {{ $author }}</p>
