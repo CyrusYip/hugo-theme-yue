@@ -31,6 +31,8 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] CSS BEM (Block, Element, Modifier)
 - [x] gruvbox color scheme (automatic dark mode)
 - [x] customize styles via scss
+- [x] copyright notice
+- [x] RSS link
 
 ## Installation
 
