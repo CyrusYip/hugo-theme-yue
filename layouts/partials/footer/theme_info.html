@@ -1,1 +1,3 @@
-<p class="theme-info">{{ i18n "themeInfo" | safeHTML }}</p>
+{{- $hugo := "<a href='https://gohugo.io'>Hugo</a>" -}}
+{{- $yue := "<a href='https://github.com/CyrusYip/hugo-theme-yue'>Yue</a>" -}}
+<p class="theme-info">{{ i18n "themeInfo" (dict "hugo" $hugo "yue" $yue) | safeHTML }}</p>

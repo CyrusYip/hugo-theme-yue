@@ -1,8 +1,8 @@
 404HomeLinkMessage: Return to the home page
 404Message: The page you visited was not found.
 authorDelimiter: ", "
-lastmod: " (Modified: %s)"
+lastmod: " (Modified: {{ .lastmod }})"
 nextPage: "Next: "
 previousPage: "Prev: "
 tableOfContents: Table of Contents
-themeInfo: 'Built with <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/CyrusYip/hugo-theme-yue">Yue</a>'
+themeInfo: Built with {{ .hugo }} and {{ .yue }}

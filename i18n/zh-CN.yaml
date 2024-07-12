@@ -1,8 +1,8 @@
 404HomeLinkMessage: 返回主页
 404Message: 找不到你访问的页面。
 authorDelimiter: 、
-lastmod: "（修改于%s）"
+lastmod: "（修改于{{ .lastmod }}）"
 nextPage: "下篇："
 previousPage: "上篇："
 tableOfContents: 目次
-themeInfo: '使用 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://github.com/CyrusYip/hugo-theme-yue">Yue</a> 构建'
+themeInfo: 使用 {{ .hugo }} 和 {{ .yue }} 构建
