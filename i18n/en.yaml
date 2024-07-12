@@ -5,3 +5,4 @@ lastmod: " (Modified: %s)"
 nextPage: "Next: "
 previousPage: "Prev: "
 tableOfContents: Table of Contents
+themeInfo: 'Built with <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/CyrusYip/hugo-theme-yue">Yue</a>'

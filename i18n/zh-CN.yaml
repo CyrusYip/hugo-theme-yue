@@ -5,3 +5,4 @@ lastmod: "（修改于%s）"
 nextPage: "下篇："
 previousPage: "上篇："
 tableOfContents: 目次
+themeInfo: '使用 <a href="https://gohugo.io">Hugo</a> 和 <a href="https://github.com/CyrusYip/hugo-theme-yue">Yue</a> 构建'
