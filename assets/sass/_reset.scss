@@ -11,3 +11,10 @@
 a {
   text-decoration: none;
 }
+
+
+// Task list
+ul:has(>li>input[type="checkbox"]) {
+  list-style-type: none;
+  padding-inline-start: 1em;
+}
