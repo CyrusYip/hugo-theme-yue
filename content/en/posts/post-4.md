@@ -32,7 +32,11 @@ ___Bold and Italic text___
 
 ## Blockquotes
 
-> This is a blockquote.
+This is a blockquote demo. This is a blockquote demo. This is a blockquote demo. This is a blockquote demo. This is a blockquote demo. This is a blockquote demo. This is a blockquote demo. This is a blockquote demo.
+
+> This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote.
+>
+> This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote. This is a blockquote.
 
 ## Lists
 
@@ -56,9 +60,9 @@ Here is some `inline code`.
 
 ### Code Block without Language Tag
 
-```
-This is a code block without a language tag.
-```
+<!-- ```
+This is a code block without a language tag. This long line increases width and break layout.
+``` -->
 
 ### Code Block with JavaScript
 

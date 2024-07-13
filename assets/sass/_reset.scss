@@ -25,3 +25,7 @@ ul:has(>li>input[type="checkbox"]) {
   list-style-type: none;
   padding-inline-start: 1em;
 }
+
+blockquote {
+  margin: 0;
+}

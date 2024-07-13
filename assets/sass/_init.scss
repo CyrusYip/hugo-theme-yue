@@ -6,10 +6,12 @@ $line-height: 1.5 !default;
 $body-max-width: 768px !default;
 $desktop-breakpoint: $body-max-width + $body-margin + $body-margin !default; // maximum body width + margin-left + margin-right
 
-// Color
+// Color, see https://github.com/morhetz/gruvbox
 $background-color-light: #fbf1c7 !default;
+$background-color1-light: #ebdbb2 !default; // used by <blockquote>
 $foreground-color-light: #3c3836 !default;
-$accent-color-light: #af3a03 !default; // gruvbox orange, used by <a>
+$accent-color-light: #af3a03 !default; // gruvbox orange, used by <a> and <blockquote>
 $background-color-dark: #282828 !default;
+$background-color1-dark: #3c3836 !default;
 $foreground-color-dark: #ebdbb2 !default;
-$accent-color-dark: #fe8019 !default; // gruvbox orange, used by <a>
+$accent-color-dark: #fe8019 !default;

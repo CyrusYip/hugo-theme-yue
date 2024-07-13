@@ -1,6 +1,7 @@
 // Light theme by default
 :root {
   --background-color: #{$background-color-light};
+  --background-color1: #{$background-color1-light};
   --foreground-color: #{$foreground-color-light};
   --accent-color: #{$accent-color-light};
 }
@@ -9,6 +10,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #{$background-color-dark};
+    --background-color1: #{$background-color1-dark};
     --foreground-color: #{$foreground-color-dark};
     --accent-color: #{$accent-color-dark};
   }
@@ -39,4 +41,9 @@ a {
 
 .footer {
   border-top: 1px solid var(--foreground-color);
+}
+
+blockquote {
+  background-color: var(--background-color1);
+  border-left: 0.5rem solid var(--accent-color);
 }
