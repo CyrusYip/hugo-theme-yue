@@ -56,7 +56,8 @@ This is a blockquote demo. This is a blockquote demo. This is a blockquote demo.
 ## Code
 
 ### Inline Code
-Here is some `inline code`.
+
+Here is some `inline code`. Here is longer `inline code inline code inline codeinline codeinline codeinline codeinline code`.
 
 ### Code Block without Language Tag
 
