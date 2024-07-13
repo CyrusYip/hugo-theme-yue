@@ -12,6 +12,13 @@ a {
   text-decoration: none;
 }
 
+// List
+.menu__list,
+.translations,
+.pagination {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
 
 // Task list
 ul:has(>li>input[type="checkbox"]) {

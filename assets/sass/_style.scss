@@ -8,8 +8,6 @@
 // Menu and language selector
 .menu {
   &__list {
-    list-style-type: none;
-    padding-inline-start: 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -24,16 +22,8 @@
   }
 }
 
-// Translation list
-.translations {
-  list-style-type: none;
-  padding-inline-start: 0;
-}
-
 // Paginator
 .pagination {
-  list-style-type: none;
-  padding-inline-start: 0;
   display: flex;
   gap: 16px;
 }
