@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "server": "hugo server --navigateToChanged",
-    "server:local": "hugo server --navigateToChanged --bind 0.0.0.0",
+    "server:shared": "hugo server --navigateToChanged --bind 0.0.0.0",
     "server:production": "hugo server --navigateToChanged --environment production",
     "build": "hugo",
     "clean": "rm -r public/",
