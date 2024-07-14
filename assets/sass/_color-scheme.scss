@@ -48,6 +48,7 @@ blockquote {
   border-left: 0.5rem solid var(--accent-color);
 }
 
-code {
+// Don't apply inline code's style to code block
+:not(pre)>code {
   background-color: var(--background-color1);
 }
