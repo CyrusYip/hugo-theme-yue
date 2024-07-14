@@ -87,6 +87,12 @@ function sayHello() {
 This is a code block without a language tag.
 ```
 
+```javascript
+function sayHello() {
+  console.log("Hello, world!")
+}
+```
+
 ### Code Block with JavaScript
 
 ```javascript
