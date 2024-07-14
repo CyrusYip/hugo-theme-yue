@@ -15,7 +15,7 @@ markup:
     hl_inline: false
     lineAnchors: ""
     lineNoStart: 1
-    lineNos: false
+    lineNos: true
     lineNumbersInTable: true
     noClasses: true
     noHl: false
