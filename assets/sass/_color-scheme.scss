@@ -56,3 +56,13 @@ blockquote {
 hr {
   background: var(--background-color1);
 }
+
+// Table
+table {
+  background-color: var(--background-color1);
+}
+
+td,
+th {
+  border: 1px solid var(--background-color);
+}

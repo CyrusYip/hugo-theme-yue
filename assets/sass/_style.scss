@@ -59,3 +59,14 @@ hr {
   border: none;
   height: 1px;
 }
+
+// Table
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5rem;
+  text-align: start;
+}
