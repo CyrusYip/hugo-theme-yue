@@ -55,9 +55,10 @@ languages:
       dateFormat: Jan 02, 2006
       author: Cyrus Yip # default author, supports single value or list, used in single page
       footer:
-        yearStart: 2023 # used in copyright notice, optional
-        yearEnd: 2024 # used in copyright notice, default value: current year
-        author: Cyrus Yip # used in copyright notice
+        copyright:
+          yearStart: 2023 # optional
+          yearEnd: 2024 # default value: current year
+          author: Cyrus Yip
   zh-CN:
     contentDir: content/zh-CN
     languageCode: zh-CN
@@ -87,9 +88,10 @@ languages:
       dateFormat: 2006年1月02日
       author: 叶寻 # default author, supports single value or list, used in single page
       footer:
-        yearStart: 2023 # used in copyright notice, optional
-        # yearEnd: 2024 # used in copyright notice, default value: current year
-        author: 叶寻 # used in copyright notice
+        copyright:
+          yearStart: 2023 # optional
+          # yearEnd: 2024 # default value: current year
+          author: 叶寻
 
 params:
   showFullTextInRSS: true

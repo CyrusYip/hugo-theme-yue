@@ -1,6 +1,6 @@
-{{- $author := site.Params.footer.author }}
-{{- $yearStart := string site.Params.footer.yearStart }}
-{{- $yearEnd := string (default (now.Format "2006") site.Params.footer.yearEnd) }}
+{{- $author := site.Params.footer.copyright.author }}
+{{- $yearStart := string site.Params.footer.copyright.yearStart }}
+{{- $yearEnd := string (default (now.Format "2006") site.Params.footer.copyright.yearEnd) }}
 {{- $yearSpan := "" }}
 {{- if not $yearStart }}
   {{- /* Use $yearEnd if $yearStart doesn't exist */ -}}
