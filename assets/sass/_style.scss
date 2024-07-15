@@ -6,6 +6,33 @@
   word-break: break-all;
 }
 
+blockquote {
+  padding: 0.5rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+}
+
+// Table
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.5rem;
+  text-align: start;
+}
+
+// Avoid overflow
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
 // Menu and language selector
 .menu {
   &__list {
@@ -49,31 +76,4 @@
 // Make summary close to home post title
 .summary {
   margin-block-start: 0;
-}
-
-blockquote {
-  padding: 0.5rem;
-}
-
-hr {
-  border: none;
-  height: 1px;
-}
-
-// Table
-table {
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: 0.5rem;
-  text-align: start;
-}
-
-// Avoid overflow
-img,
-video,
-iframe {
-  max-width: 100%;
 }
