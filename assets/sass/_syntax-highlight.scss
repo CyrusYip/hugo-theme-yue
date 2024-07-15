@@ -2,3 +2,9 @@
 @media (prefers-color-scheme: dark) {
   @import "syntax-highlight/gruvbox-dark";
 }
+
+// Use background color slightly different from that of <body>
+.bg,
+.chroma {
+  background-color: var(--background-color1);
+}
