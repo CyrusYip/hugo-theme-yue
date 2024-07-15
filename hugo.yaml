@@ -21,6 +21,9 @@ markup:
     noHl: false
     style: monokai
     tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
 
 languages:
   en:

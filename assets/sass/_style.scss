@@ -70,3 +70,10 @@ th {
   padding: 0.5rem;
   text-align: start;
 }
+
+// Avoid overflow
+img,
+video,
+iframe {
+  max-width: 100%;
+}
