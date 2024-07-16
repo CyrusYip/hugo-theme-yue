@@ -4,6 +4,7 @@
 }
 
 // Use background color slightly different from that of <body>
+pre:not(.bg, .chroma),
 .bg,
 .chroma {
   background-color: var(--background-color1);

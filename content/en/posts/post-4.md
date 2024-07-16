@@ -63,21 +63,33 @@ This is a blockquote demo. This is a blockquote demo. This is a blockquote demo.
 
 Here is some `inline code`. Here is longer `inline code inline code inline codeinline codeinline codeinline codeinline code`.
 
-### Code Block with JavaScript
+### Code Block with JavaScript Tag
 
-```javascript
+#### Line number enabled
+
+```javascript {linenos=true}
 console.log("Hello")
 console.log("Hello")
 console.log("Hello")
 ```
 
-```javascript
+```javascript {linenos=true}
 function sayHello() {
   console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!");
 }
 ```
 
-### Code Block with Bash
+#### Line number disabled
+
+Bug: background-color becomes wrong if you scroll the code.
+
+```javascript {linenos=false}
+function sayHello() {
+  console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!");
+}
+```
+
+### Code Block with Bash Tag
 
 ```bash
 #!/bin/bash
@@ -109,6 +121,34 @@ Paragraph.
 #!/bin/bash
 echo "Hello, world!"
 ```
+
+### Code block indented with four spaces
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Example HTML5 Document</title>
+    </head>
+    <body>
+      <p>Test</p>
+    </body>
+    </html>
+
+### Code block with Hugo's internal highlight shortcode
+
+{{< highlight html >}}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+{{< /highlight >}}
 
 ## Horizontal Rule
 

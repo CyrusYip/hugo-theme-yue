@@ -78,6 +78,7 @@ iframe {
   margin-block-start: 0;
 }
 
+// Code block with specified language
 .highlight {
   // Horizontal scrollbar for code block
   overflow-x: auto;
@@ -86,4 +87,10 @@ iframe {
   &+& {
     margin-block-start: 1rem;
   }
+}
+
+// Code block without specified language
+pre:not(.chroma) {
+  // Horizontal scrollbar for code block
+  overflow-x: auto;
 }
