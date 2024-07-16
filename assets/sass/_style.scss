@@ -77,3 +77,13 @@ iframe {
 .summary {
   margin-block-start: 0;
 }
+
+.highlight {
+  // Horizontal scrollbar for code block
+  overflow-x: auto;
+
+  // Avoid two blocks connecting together
+  &+& {
+    margin-block-start: 1rem;
+  }
+}

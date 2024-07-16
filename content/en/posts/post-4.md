@@ -63,23 +63,26 @@ This is a blockquote demo. This is a blockquote demo. This is a blockquote demo.
 
 Here is some `inline code`. Here is longer `inline code inline code inline codeinline codeinline codeinline codeinline code`.
 
-<!--
-### Code Block without Language Tag
-
-```
-This is a code block without a language tag. This long line increases width and break layout.
-```
-
 ### Code Block with JavaScript
 
 ```javascript
-// This will cause overflow
+console.log("Hello")
+console.log("Hello")
+console.log("Hello")
+```
+
+```javascript
 function sayHello() {
   console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!");
 }
 ```
--->
 
+### Code Block with Bash
+
+```bash
+#!/bin/bash
+echo "Hello, world!"
+```
 
 ### Code Block without Language Tag
 
@@ -88,23 +91,21 @@ code block without
 a language tag.
 ```
 
-```javascript
-console.log("Hello")
-console.log("Hello")
-console.log("Hello")
+```
+code block without
+a language tag.
 ```
 
-### Code Block with JavaScript
+Paragraph.
 
-```javascript
-console.log("Hello")
-console.log("Hello")
-console.log("Hello")
+```
+This is a code block without a language tag. This is a code block without a language tag. This is a code block without a language tag.
+This is a code block without a language tag. This is a code block without a language tag. This is a code block without a language tag.
 ```
 
-### Code Block with Bash
+Paragraph.
 
-```bash
+```
 #!/bin/bash
 echo "Hello, world!"
 ```
