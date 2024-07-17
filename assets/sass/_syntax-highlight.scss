@@ -4,8 +4,11 @@
 }
 
 // Use background color slightly different from that of <body>
-pre:not(.bg, .chroma),
+// Without language
+pre:not(.chroma),
+// With language
 .bg,
-.chroma {
+.chroma,
+.highlight {
   background-color: var(--background-color1);
 }

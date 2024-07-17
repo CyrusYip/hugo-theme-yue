@@ -80,7 +80,7 @@ iframe {
 
 // Code block with specified language
 .highlight {
-  // Horizontal scrollbar for code block
+  // Horizontal scrollbar
   overflow-x: auto;
 
   // Avoid two blocks connecting together
@@ -91,6 +91,6 @@ iframe {
 
 // Code block without specified language
 pre:not(.chroma) {
-  // Horizontal scrollbar for code block
+  // Horizontal scrollbar
   overflow-x: auto;
 }

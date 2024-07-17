@@ -81,8 +81,6 @@ function sayHello() {
 
 #### Line number disabled
 
-Bug: background-color becomes wrong if you scroll the code.
-
 ```javascript {linenos=false}
 function sayHello() {
   console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!"); console.log("Hello, world!");
