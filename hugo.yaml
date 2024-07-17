@@ -2,6 +2,7 @@ baseURL: https://example.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableGitInfo: true
+enableEmoji: true
 markup:
   tableOfContents:
     endLevel: 6
