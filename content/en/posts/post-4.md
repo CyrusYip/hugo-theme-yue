@@ -198,7 +198,6 @@ This is fake video, which is used to test overflow.
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
 
-<!--
 ### Long Table
 
 | Header 1 | Header 2 | Header 3 | Header 4 | Header 5 | Header 6 | Header 7 | Header 8 | Header 9 | Header 10 |
@@ -233,7 +232,6 @@ This is fake video, which is used to test overflow.
 | Cell 361 | Cell 362 | Cell 363 | Cell 364 | Cell 365 | Cell 366 | Cell 367 | Cell 368 | Cell 369 | Cell 370  | Cell 371  | Cell 372  | Cell 373  | Cell 374  | Cell 375  | Cell 376  | Cell 377  | Cell 378  | Cell 379  | Cell 380  |
 | Cell 381 | Cell 382 | Cell 383 | Cell 384 | Cell 385 | Cell 386 | Cell 387 | Cell 388 | Cell 389 | Cell 390  | Cell 391  | Cell 392  | Cell 393  | Cell 394  | Cell 395  | Cell 396  | Cell 397  | Cell 398  | Cell 399  | Cell 400  |
 
--->
 
 ## Task Lists
 

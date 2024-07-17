@@ -26,6 +26,16 @@ th {
   text-align: start;
 }
 
+// Horizontal scrollbar for table
+.table-wrapper {
+  overflow-x: auto;
+
+  table {
+    // Override global word-break, don't break Chinese/Japanese/Korean (CJK) text
+    word-break: keep-all;
+  }
+}
+
 // Avoid overflow
 svg,
 img,
