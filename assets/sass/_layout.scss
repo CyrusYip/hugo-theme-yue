@@ -1,7 +1,7 @@
 // On mobile, add little margins
 .body {
-  margin-left: $body-margin;
-  margin-right: $body-margin;
+  margin-left: $body-margin-left;
+  margin-right: $body-margin-right;
 }
 
 // On desktop, use fixed width and center <body>
