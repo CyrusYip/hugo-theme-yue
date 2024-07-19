@@ -31,6 +31,7 @@ To use recommended Hugo version, run `npx hugo`.
 - [x] copyright notice (author and year span can be set)
 - [x] RSS link
 - [x] [Open Graph](https://ogp.me/)
+- [x] [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
 
 ## Installation
 
