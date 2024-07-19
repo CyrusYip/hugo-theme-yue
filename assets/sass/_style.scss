@@ -74,8 +74,9 @@ iframe {
   margin-block-end: 16px;
 }
 
-// Make section post title close to date info
-.section-post-title {
+// Make [section post title / term post title] close to date info
+.section-post-title,
+.term-post-title {
   margin-block-start: 0;
 }
 

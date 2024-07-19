@@ -21,11 +21,13 @@
   {{ range .Pages.ByLinkTitle }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   {{ end }}
+{{- /* term */ -}}
 {{ else }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ partial "main/date.html" . }}{{ partial "main/lastmod.html" . }}
+    <h2 class="term-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   {{ end }}
 {{ end }}
 {{ end }}
