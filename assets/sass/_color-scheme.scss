@@ -1,9 +1,9 @@
 // Light theme by default
 :root {
-  --background-color: #{$background-color-light};
-  --background-color1: #{$background-color1-light};
-  --foreground-color: #{$foreground-color-light};
-  --accent-color: #{$accent-color-light};
+  --background-color: #{$background-color-light}; // body
+  --background-color1: #{$background-color1-light}; // blockquote, code block, border, table, hr
+  --foreground-color: #{$foreground-color-light}; // text
+  --accent-color: #{$accent-color-light}; // link, blockquote
 }
 
 // Override variables for dark theme
