@@ -5,6 +5,7 @@
   {{ .Content }}
   {{ range $paginator.Pages }}
     <h2 class="home-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ partial "main/date.html" . }}{{ partial "main/lastmod.html" . }}
     {{ with .Summary }}
     {{- /*
     Create deterministic summary output for styling.

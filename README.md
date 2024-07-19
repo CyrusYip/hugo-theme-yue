@@ -24,7 +24,7 @@ To use recommended Hugo version, run `npx hugo`.
     - [x] section
 - [x] author in single page (single or list)
 - [x] 404 page
-- [x] lastmod in section list and page
+- [x] lastmod in homepage, single page, and section
 - [x] CSS BEM (Block, Element, Modifier)
 - [x] gruvbox color scheme (automatic dark mode)
 - [x] customize styles via scss
