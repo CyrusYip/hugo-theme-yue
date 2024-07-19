@@ -99,6 +99,9 @@ params:
   homePagerSize: 5
   sectionPagerSize: 9999 # default: 10
   toc: true # Table of Contents
+  # Open Graph, see https://gohugo.io/templates/embedded/#configure-open-graph
+  images:
+    - favicon.ico # Default image
 
 frontmatter:
   lastmod: ['lastmod', ':default']

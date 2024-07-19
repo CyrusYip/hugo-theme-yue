@@ -12,27 +12,25 @@ To use recommended Hugo version, run `npx hugo`.
 ## Features
 
 - [x] mobile-first
-- [x] stretch `<main>` to avoid additional space below `<footer>` (demo: `/categories/`)
 - [x] tags
 - [x] categories
 - [x] scss (libsass)
 - [x] full-text RSS (enabled by default)
 - [x] show translations
-- [x] customize footer
 - [x] customize date format
 - [x] language selector
 - [x] paginator
     - [x] homepage
     - [x] section
-    - [ ] ~~TODO: move paginator the to the bottom, just above `<footer>`~~
 - [x] author in single page (single or list)
 - [x] 404 page
 - [x] lastmod in section list and page
 - [x] CSS BEM (Block, Element, Modifier)
 - [x] gruvbox color scheme (automatic dark mode)
 - [x] customize styles via scss
-- [x] copyright notice
+- [x] copyright notice (author and year span can be set)
 - [x] RSS link
+- [x] [Open Graph](https://ogp.me/)
 
 ## Installation
 
