@@ -1,6 +1,7 @@
 404HomeLinkMessage: Return to the home page
 404Message: The page you visited was not found.
 authorDelimiter: ", "
+colon: ':'
 lastmod: " (Modified: {{ .lastmod }})"
 nextPage: "Next: "
 previousPage: "Prev: "
