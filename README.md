@@ -2,10 +2,14 @@
 
 ## Development
 
+Clone this repository.
+
 ```
 npm install
-npm run serve
+npm run clean:server:shared
 ```
+
+There are other useful commands listed in [package.json](package.json).
 
 To use recommended Hugo version, run `npx hugo`.
 

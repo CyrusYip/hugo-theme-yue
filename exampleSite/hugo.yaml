@@ -1,3 +1,4 @@
+theme: hugo-theme-yue
 baseURL: https://example.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
