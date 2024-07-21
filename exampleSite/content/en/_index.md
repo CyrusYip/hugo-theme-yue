@@ -4,4 +4,4 @@ draft: false
 title: Home
 ---
 
-Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. Hi, welcome to my blog. 
+Yue is a minimal Hugo theme. Source code: <https://github.com/CyrusYip/hugo-theme-yue>.

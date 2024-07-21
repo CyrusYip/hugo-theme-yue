@@ -39,7 +39,7 @@ languages:
     languageCode: en-US
     languageDirection: ltr
     languageName: English
-    title: My New English Site # Shown in home page
+    title: Yue # Shown in home page
     weight: 1
     menus:
       main:
@@ -71,7 +71,7 @@ languages:
     languageCode: zh-CN
     languageDirection: ltr
     languageName: 中文
-    title: 中文网站
+    title: 月
     weight: 2
     menus:
       main:
