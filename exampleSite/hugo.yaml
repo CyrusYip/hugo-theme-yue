@@ -4,6 +4,7 @@ defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableGitInfo: true # Set lastmod from git commit date
 enableEmoji: true
+enableRobotsTXT: true
 
 params:
   showFullTextInRSS: true
