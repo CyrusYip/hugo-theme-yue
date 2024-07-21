@@ -1,5 +1,5 @@
 theme: hugo-theme-yue
-baseURL: https://example.org/
+baseURL: https://yue.cyrusyip.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableGitInfo: true # Set lastmod from git commit date

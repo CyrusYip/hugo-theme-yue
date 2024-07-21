@@ -6,6 +6,7 @@
     "server:shared": "hugo server --navigateToChanged --bind 0.0.0.0 --source exampleSite/ --themesDir ../..",
     "server:production": "hugo server --navigateToChanged --environment production --source exampleSite/ --themesDir ../..",
     "build": "hugo --source exampleSite/ --themesDir ../..",
+    "build:minify": "hugo --minify --source exampleSite/ --themesDir ../..",
     "clean": "rm -r exampleSite/public/",
     "clean:server": "npm run clean; npm run server",
     "clean:server:shared": "npm run clean; npm run server:shared",
