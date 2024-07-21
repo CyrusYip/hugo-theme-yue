@@ -1,38 +1,43 @@
 baseURL: https://example.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
-enableGitInfo: true
+enableGitInfo: true # Set lastmod from git commit date
 enableEmoji: true
+
+params:
+  showFullTextInRSS: true
+  homePagerSize: 5
+  sectionPagerSize: 10000 # Default: 10, set this to a large number to remove pagination
+  toc: true # Table of Contents
+  images:
+    # Default image used in Open Graph, see https://gohugo.io/templates/embedded/#configure-open-graph
+    - favicon.ico # /static/favicon.ico
+
+frontmatter:
+  lastmod: ['lastmod', ':default'] # Lastmod in front matter has highest precedence
+
 markup:
   tableOfContents:
+    startLevel: 2
     endLevel: 6
     ordered: false
-    startLevel: 2
   highlight:
-    anchorLineNos: false
-    codeFences: true
-    guessSyntax: false
-    hl_Lines: ""
-    hl_inline: false
-    lineAnchors: ""
+    guessSyntax: true
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: true
     noClasses: false
-    noHl: false
-    style: monokai
-    tabWidth: 4
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: false # Don't allow HTML code in Markdown
 
+# Any key not defined under a languages will fall back to the global value in the root of configuration
 languages:
   en:
     contentDir: content/en
     languageCode: en-US
     languageDirection: ltr
     languageName: English
-    title: My New English Site
+    title: My New English Site # Shown in home page
     weight: 1
     menus:
       main:
@@ -52,13 +57,12 @@ languages:
           pageRef: /about
           weight: 50
     params:
-      # See https://gohugo.io/functions/time/format/
-      dateFormat: Jan 02, 2006
-      author: Cyrus Yip # default author, supports single value or list, used in single page
+      dateFormat: Jan 02, 2006 # See https://gohugo.io/functions/time/format/
+      author: Cyrus Yip # Default author, supports single value or list, used in single page
       footer:
         copyright:
-          yearStart: 2023 # optional
-          yearEnd: 2024 # default value: current year
+          yearStart: 2023 # Optional
+          yearEnd: 2024 # Optional, default value: current year
           author: Cyrus Yip
   zh-CN:
     contentDir: content/zh-CN
@@ -85,26 +89,13 @@ languages:
           pageRef: /about
           weight: 50
     params:
-      # See https://gohugo.io/functions/time/format/
       dateFormat: 2006年1月02日
-      author: 叶寻 # default author, supports single value or list, used in single page
+      author: 叶寻
       footer:
         copyright:
-          yearStart: 2023 # optional
-          # yearEnd: 2024 # default value: current year
+          yearStart: 2023
+          # yearEnd: 2024
           author: 叶寻
-
-params:
-  showFullTextInRSS: true
-  homePagerSize: 5
-  sectionPagerSize: 9999 # default: 10
-  toc: true # Table of Contents
-  # Open Graph, see https://gohugo.io/templates/embedded/#configure-open-graph
-  images:
-    - favicon.ico # Default image
-
-frontmatter:
-  lastmod: ['lastmod', ':default']
 
 module:
   hugoVersion:
