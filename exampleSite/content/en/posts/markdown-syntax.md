@@ -1,6 +1,4 @@
 ---
-aliases:
-- migrate-from-jekyl
 author: Hugo Authors
 categories:
 - themes
@@ -8,8 +6,6 @@ categories:
 date: "2019-03-11"
 description: Sample article showcasing basic Markdown syntax and formatting for HTML
   elements.
-series:
-- Themes Guide
 tags:
 - markdown
 - css
