@@ -11,8 +11,11 @@ $desktop-breakpoint: $body-max-width + $body-margin-left + $body-margin-right !d
 $background-color-light: #fbf1c7 !default;
 $background-color1-light: #ebdbb2 !default;
 $foreground-color-light: #3c3836 !default;
+$foreground-color3-light: #665c54 !default;
 $accent-color-light: #af3a03 !default; // orange
+
 $background-color-dark: #282828 !default;
 $background-color1-dark: #3c3836 !default;
 $foreground-color-dark: #ebdbb2 !default;
+$foreground-color3-dark: #bdae93 !default;
 $accent-color-dark: #fe8019 !default;

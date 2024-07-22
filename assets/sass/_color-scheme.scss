@@ -3,6 +3,7 @@
   --background-color: #{$background-color-light}; // body
   --background-color1: #{$background-color1-light}; // blockquote, code block, border, table, hr
   --foreground-color: #{$foreground-color-light}; // text
+  --foreground-color3: #{$foreground-color3-light}; // figcaption
   --accent-color: #{$accent-color-light}; // link, blockquote
 }
 
@@ -12,6 +13,7 @@
     --background-color: #{$background-color-dark};
     --background-color1: #{$background-color1-dark};
     --foreground-color: #{$foreground-color-dark};
+    --foreground-color3: #{$foreground-color3-dark}; // figcaption
     --accent-color: #{$accent-color-dark};
   }
 }
@@ -65,4 +67,9 @@ table {
 td,
 th {
   border: 1px solid var(--background-color);
+}
+
+// Figure
+figcaption {
+  color: var(--foreground-color3);
 }

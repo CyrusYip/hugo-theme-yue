@@ -17,6 +17,3 @@ markup:
     lineNoStart: 1
     lineNos: true
     noClasses: false
-  goldmark:
-    renderer:
-      unsafe: false # Whether to allow HTML code in Markdown, see https://gohugo.io/getting-started/configuration-markup/#rendererunsafe

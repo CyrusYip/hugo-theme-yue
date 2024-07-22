@@ -167,13 +167,32 @@ echo "Hello, world!"
 ___
 
 ## Links
+
 [GitHub](https://github.com)
 
-## Images
+## Images without caption
 
 1![Alt text](https://via.placeholder.com/200)2
 
 1![Alt text](https://via.placeholder.com/2000)2
+
+## Images with caption
+
+text text
+
+<figure>
+  <img src="https://via.placeholder.com/2000">
+  <figcaption>2000×2000 image</figcaption>
+</figure>
+
+text text
+
+<figure>
+  <img src="https://via.placeholder.com/200">
+  <figcaption>200×200 image</figcaption>
+</figure>
+
+text text
 
 ## iframe
 
