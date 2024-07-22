@@ -95,13 +95,10 @@ iframe {
   // Horizontal scrollbar
   overflow-x: auto;
 
-  // Avoid two blocks connecting together
-  &+& {
-    margin-block-start: 1rem;
-  }
+  margin-block: 1rem;
 }
 
-// Code block without specified language
+// Code block [without specified language / indented with 4 spaces]
 pre:not(.chroma) {
   // Horizontal scrollbar
   overflow-x: auto;
