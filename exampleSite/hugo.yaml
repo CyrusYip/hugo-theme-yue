@@ -10,7 +10,7 @@ enableRobotsTXT: true
 
 params:
   _merge: deep # Import default config
-  showFullTextInRSS: true
+  rssFullContent: true
   homePagerSize: 5
   sectionPagerSize: 10000 # Default: 10, set this to a large number to remove pagination
   images:
