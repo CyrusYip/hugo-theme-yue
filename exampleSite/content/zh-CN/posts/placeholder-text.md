@@ -1,6 +1,7 @@
 ---
 author: Hugo Authors
-date: "2019-03-09"
+date: 2019-03-09T00:00:00Z
+lastmod: 2019-03-09T00:00:00Z # Won't show because it's equal to date
 description: Lorem Ipsum Dolor Si Amet
 tags:
 - markdown
