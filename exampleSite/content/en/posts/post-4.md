@@ -17,6 +17,10 @@ slug: post-4
 ##### H5
 ###### H6
 
+## Emoji
+
+`:see_no_evil:` :see_no_evil:
+
 ## Long word
 
 word aVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWord word

@@ -1,0 +1,22 @@
+# Default config
+module:
+  hugoVersion:
+    extended: true
+    min: 0.128.1
+
+params:
+  toc: true # Table of Contents
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+  highlight:
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: false # Whether to allow HTML code in Markdown, see https://gohugo.io/getting-started/configuration-markup/#rendererunsafe

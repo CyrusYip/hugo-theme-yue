@@ -1,16 +1,18 @@
+# Docs: https://gohugo.io/getting-started/configuration
+# Don't remove _merge, which imports default config
 theme: hugo-theme-yue
 baseURL: https://yue.cyrusyip.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableGitInfo: true # Set lastmod from git commit date
-enableEmoji: true
+enableEmoji: true # Emoji list: https://gohugo.io/quick-reference/emojis/
 enableRobotsTXT: true
 
 params:
+  _merge: deep # Import default config
   showFullTextInRSS: true
   homePagerSize: 5
   sectionPagerSize: 10000 # Default: 10, set this to a large number to remove pagination
-  toc: true # Table of Contents
   images:
     # Default image used in Open Graph, see https://gohugo.io/templates/embedded/#configure-open-graph
     - favicon.ico # /static/favicon.ico
@@ -19,18 +21,7 @@ frontmatter:
   lastmod: ['lastmod', ':default'] # Lastmod in front matter has highest precedence
 
 markup:
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-  highlight:
-    guessSyntax: true
-    lineNoStart: 1
-    lineNos: true
-    noClasses: false
-  goldmark:
-    renderer:
-      unsafe: false # Don't allow HTML code in Markdown
+  _merge: deep # Import default config
 
 # Any key not defined under a languages will fall back to the global value in the root of configuration
 languages:
@@ -98,8 +89,3 @@ languages:
           yearStart: 2023
           # yearEnd: 2024
           author: 叶寻
-
-module:
-  hugoVersion:
-    extended: true
-    min: 0.128.1
