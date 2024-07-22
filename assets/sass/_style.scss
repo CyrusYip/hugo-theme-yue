@@ -16,23 +16,23 @@ hr {
 }
 
 // Table
-table {
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: 0.5rem;
-  text-align: start;
-}
-
-// Horizontal scrollbar for table
 .table-wrapper {
+  // Horizontal scrollbar for table
   overflow-x: auto;
+  // Margin
+  margin-block: 1rem;
 
-  table {
+  >table {
     // Override global word-break, don't break Chinese/Japanese/Korean (CJK) text
     word-break: keep-all;
+    // Style
+    border-collapse: collapse;
+
+    td,
+    th {
+      padding: 0.5rem;
+      text-align: start;
+    }
   }
 }
 
