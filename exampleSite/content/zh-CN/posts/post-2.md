@@ -4,7 +4,7 @@ draft: false
 tags:
 - red
 - green
-title: 文章 2
+title: 文章 2 | 多位作者
 author:
   - 张三
   - 李四

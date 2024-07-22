@@ -4,7 +4,7 @@ draft: false
 tags:
 - red
 - green
-title: Post 2
+title: Post 2 | Multiple authors
 author:
   - John Doe
   - Jane Doe

@@ -1,9 +1,14 @@
-404HomeLinkMessage: Return to the home page # 404.html
-404Message: The page you visited was not found. # 404.html
-authorDelimiter: ", " # single page
-colon: ':' # taxonomy in single page, e.g. Tags:
-lastmodWrapper: " (Modified: {{ .lastmod }})" # single page
-nextPage: "Next: " # page nav in single page
-previousPage: "Prev: " # page nav in single page
-tableOfContents: Table of Contents # single page
-themeInfo: Built with {{ .hugo }} and {{ .yue }} # footer in single page
+# Sort according to appearance order
+
+# Single page
+authorDelimiter: ", "
+lastmodWrapper: " (Modified: {{ .lastmod }})"
+tableOfContents: Table of Contents
+colon: ':' # Taxonomy, e.g. Tags:
+previousPage: "Prev: " # Page nav
+nextPage: "Next: " # Page nav
+themeInfo: Built with {{ .hugo }} and {{ .yue }} # Footer
+
+# 404 page, e.g. /en/404.html
+404Message: The page you visited was not found.
+404HomeLinkMessage: Return to the home page
