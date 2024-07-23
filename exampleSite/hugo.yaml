@@ -61,6 +61,7 @@ languages:
           yearEnd: 2024 # Optional, default value: current year
           author: Jane Doe
   zh-CN:
+    hasCJKLanguage: true
     contentDir: content/zh-CN
     languageCode: zh-CN
     languageDirection: ltr
