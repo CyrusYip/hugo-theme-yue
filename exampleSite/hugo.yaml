@@ -1,10 +1,10 @@
-# Docs: https://gohugo.io/getting-started/configuration
+# Documentation: https://gohugo.io/getting-started/configuration
 # Don't remove _merge, which imports default config
 theme: hugo-theme-yue
 baseURL: https://yue.cyrusyip.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
-enableGitInfo: true # Set lastmod from git commit date
+enableGitInfo: false # Set lastmod from git history, this may increase build time
 enableEmoji: true # Emoji list: https://gohugo.io/quick-reference/emojis/
 enableRobotsTXT: true
 
@@ -18,7 +18,7 @@ params:
     - favicon.ico # /static/favicon.ico
 
 frontmatter:
-  lastmod: ['lastmod', ':default'] # Lastmod in front matter has highest precedence
+  lastmod: ['lastmod', ':default'] # lastmod in front matter has highest precedence
 
 markup:
   _merge: deep # Import default config

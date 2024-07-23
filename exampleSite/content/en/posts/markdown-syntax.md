@@ -3,7 +3,8 @@ author: Hugo Authors
 categories:
 - themes
 - syntax
-date: "2019-03-11"
+date: 2019-03-11T00:00:00+00:00
+lastmod: 2024-07-22T00:00:00+00:00
 description: Sample article showcasing basic Markdown syntax and formatting for HTML
   elements.
 tags:
