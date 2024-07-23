@@ -1,7 +1,7 @@
 # Documentation: https://gohugo.io/getting-started/configuration
 # Don't remove _merge, which imports default config
 theme: hugo-theme-yue
-baseURL: https://yue.cyrusyip.org/
+baseURL: https://yue.cyrusyip.org/ # Change this to your real domain name, e.g. https://my-cool-domain.org/
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 enableGitInfo: false # Set lastmod from git history, this may increase build time
