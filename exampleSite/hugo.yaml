@@ -26,6 +26,10 @@ markup:
     renderer:
       unsafe: true # Allow HTML code in Markdown, see https://gohugo.io/getting-started/configuration-markup/#rendererunsafe
 
+services:
+  googleAnalytics:
+    ID: # Measurement ID, e.g. G-F46B15BRUF
+
 # Any key not defined under a languages will fall back to the global value in the root of configuration
 languages:
   en:
