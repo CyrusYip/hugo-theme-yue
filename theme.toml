@@ -1,17 +1,46 @@
 name = 'Yue'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
+licenselink = 'https://github.com/CyrusYip/hugo-theme-yue/blob/main/LICENSE'
+description = 'A minimal, multilangual and customizable theme, suitable for blogging'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/CyrusYip/hugo-theme-yue'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://yue.cyrusyip.org/'
 
 # Taxonomy terms
-tags = ['blog', 'multilangual']
-# features = ['some', 'awesome', 'features']
+tags = [
+  'blog',
+  'responsive',
+  'minimal',
+  'light',
+  'dark',
+  'multilangual',
+  'dark-mode',
+  'personal'
+]
+features = [
+    "minimal appearance",
+    "mobile-first and responsive",
+    "automatic dark mode",
+    "scss",
+    "multilingual",
+    "translation list in single page",
+    "language selector",
+    "multiple authors",
+    "table of content",
+    "modification date on home page, single page, section page and term page",
+    "tags and categories",
+    "copyright notice",
+    "rss link",
+    "full-text RSS",
+    "heading anchor link",
+    "search engine optimization",
+    "microdata",
+    "meta description",
+    "open graph"
+]
 
 # If the theme has a single author
 [author]

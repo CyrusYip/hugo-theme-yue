@@ -14,10 +14,11 @@ Yue is a minimal, multilangual and customizable Hugo theme, suitable for bloggin
     - Translation list in single page
     - Language selector (go to corresponding page or homepage)
 - Multiple authors
+- Table of Content
 - Modification date on home page, single page, section page and term page
 - Tags and categories
 - Copyright notice (author and year span can be set)
-- RSS Link
+- RSS link
 - Full-text RSS
 - Heading anchor link
 - Search engine optimization
@@ -261,6 +262,12 @@ If you don't have Node.js and npm installed, just install the version listed in 
   "version": "x.yyy.z"
 },
 ```
+
+## Websites built with Yue
+
+If you are using Yue and source code of your website is hosted on GitHub, you can add `hugo-theme-yue` topic to your repository.
+
+[Link to `hugo-theme-yue` topic](https://github.com/topics/hugo-theme-yue).
 
 ## Acknowledgement
 
