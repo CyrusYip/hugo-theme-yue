@@ -1,58 +1,279 @@
-# Theme Name
+# Yue
 
-## Development
+**[Live demo](https://yue.cyrusyip.org/)**
 
-Clone this repository.
-
-```
-npm install
-npm run clean:server:shared
-```
-
-There are other useful commands listed in [package.json](package.json).
-
-To use recommended Hugo version, run `npx hugo`.
+Yue is a minimal, multilangual and customizable Hugo theme, suitable for blogging.
 
 ## Features
 
-- [x] mobile-first
-- [x] tags
-- [x] categories
-- [x] scss (libsass)
-- [x] full-text RSS (enabled by default)
-- [x] show translations
-- [x] customize date format
-- [x] language selector
-- [x] paginator
-    - [x] homepage
-    - [x] section
-- [x] author in single page (single or list)
-- [x] 404 page
-- [x] lastmod in homepage, single page, section, and term
-- [x] CSS BEM (Block, Element, Modifier)
-- [x] gruvbox color scheme (automatic dark mode)
-- [x] customize styles via scss
-- [x] copyright notice (author and year span can be set)
-- [x] RSS link
-- [x] [Open Graph](https://ogp.me/)
-- [x] [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
+- Minimal appearance
+- Mobile-first and responsive
+- Automatic dark mode
+- SCSS
+- Multilangual
+    - Translation list in single page
+    - Language selector (go to corresponding page or homepage)
+- Multiple authors
+- Modification date on home page, single page, section page and term page
+- Tags and categories
+- Copyright notice (author and year span can be set)
+- RSS Link
+- Full-text RSS
+- Heading anchor link
+- Search engine optimization
+    - [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
+    - meta description
+- [Open Graph](https://ogp.me/)
 
-## Installation
+To find out all features, check [hugo.yaml](hugo.yaml) (default configuration) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml) (demo site's configuration).
 
-## Configuration
+## Get started
 
-### customize styles
+### Install
 
-To customize styles, create `/assets/sass/_custom-start.scss` (applied first) and `/assets/sass/_custom-end.scss` (applied last) in your site. You can override variables in `_custom-start.scss`. Vanilla CSS is also valid in SCSS.
+Install [Git](https://git-scm.com/downloads) and latest [Hugo extended](https://gohugo.io/installation/).
 
-### title of `/tags` and `/categories`
+```shell
+# Create website
+git init my-website
+cd my-website
+# Install theme
+git submodule add --depth=1 https://github.com/CyrusYip/hugo-theme-yue themes/hugo-theme-yue
+git commit --message "add theme"
+# Create demo content
+cp --recursive themes/hugo-theme-yue/exampleSite/* .
+# Preview
+hugo server
+```
 
-If your website is not in English, you probably want to customize title of `/tags`.
+Now we have a working demo webiste. The `content` directory contains the content, and `hugo.yaml` is configuration file. Feel free to play around with them.
+
+### Update theme
+
+```shell
+cd my-website
+git submodule update --remote
+```
+
+To subscribe updates, add <https://github.com/CyrusYip/hugo-theme-yue/commits.atom> to a feed aggregator (e.g. Inoreader).
+
+### Clone website
+
+You need to use additional options when you clone your website project.
+
+```shell
+git clone --recurse-submodules --shallow-submodules git@github.com:your-user-name/my-website.git
+```
+
+### Deploy
+
+After setting up the website, you probably want to host it on Internet. There are many methods for doing it, see [Hosting and deployment | Hugo](https://gohugo.io/hosting-and-deployment/). If you don't know what to choose, you can start from Netlify, see [Host on Netlify | Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/).
+
+Make sure you change baseURL to your domain name (e.g. `https://my-cool-domain.org/`) in `hugo.yaml`.
+
+```diff
+-baseURL: https://yue.cyrusyip.org/
++baseURL: https://my-cool-domain.org/
+```
+
+Recommended build command:
+
+```shell
+hugo --gc --minify
+```
+
+`--gc` remove unused cache files
+, and `--minify` reduce the size of the website (mainly HTML).
+
+## Usage
+
+Create a new post.
+
+```
+hugo new content content/en/posts/my-first-post.md
+```
+
+To learn more about usage, see:
+
+- [Basic usage | Hugo](https://gohugo.io/getting-started/usage/)
+- [Directory structure | Hugo](https://gohugo.io/getting-started/directory-structure/)
+
+## Config
+
+Settings are listed in [exampleSite/hugo.yaml](exampleSite/hugo.yaml) (demo site's config) and [hugo.yaml](hugo.yaml) (default config, imported by the former).
+
+In the root of your website project, `hugo.yaml` is the config file, which is a copy of [exampleSite/hugo.yaml](exampleSite/hugo.yaml).
+
+To learn configuration, see [Configure Hugo | Hugo](https://gohugo.io/getting-started/configuration/).
+
+### Multilingual mode
+
+Supported languages:
+
+- `en`: English
+- `zh-CN`: Simplified Chinese
+
+To create a multilingual website, see [Multilingual mode | Hugo](https://gohugo.io/content-management/multilingual/) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml).
+
+Translation files are listed in [i18n](i18n) directory. Contributions for more language are welcome. If you want to contribute, refer to [i18n/en.yaml](i18n/en.yaml).
+
+#### Title of tags and categories
+
+If your website is not in English, you probably want to customize title of `/tags` and `/categories`.
 
 For example, to customize `/tags` title of `zh-CN` website, create `content/zh-CN/tags/_index.md` and add the following content into the file.
 
 ```
 ---
-title: 标签
+title: Chinese Tags
 ---
 ```
+
+## Customize
+
+### Favicon
+
+Favicon is the icon next to title in a browser tab. To use your favicon, put `favicon.ico` under `static` directory. You can create `favicon.ico` on online favicon.ico generators.
+
+### Styles
+
+Yue uses SCSS (libsass) to add styles. All files are in [assets/sass](assets/sass).To customize styles, create `assets/sass/_custom-start.scss` and `assets/sass/_custom-end.scss`.
+
+```shell
+mkdir --parents assets/sass/
+cp themes/hugo-theme-yue/assets/sass/_custom-start.scss assets/sass/
+cp themes/hugo-theme-yue/assets/sass/_custom-end.scss assets/sass/
+```
+
+`_custom-start.scss` is applied first, and you can override variables in this file.
+
+```scss
+$base-font-size: 15px;
+```
+
+`_custom-end.scss` is applied last, and you can add styles in this file.
+
+Vanilla CSS is also valid in SCSS.
+
+References:
+
+- [CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Sass: Sass Basics](https://sass-lang.com/guide/)
+- [Directory structure | Hugo](https://gohugo.io/getting-started/directory-structure/)
+
+### head (scripts/styles)
+
+You can add external styles and scripts in `layouts/partials/head/custom.html`, which is appended to [`<head>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
+
+```shell
+mkdir --parents layouts/partials/head/
+touch layouts/partials/head/custom.html
+```
+
+Here is an example of adding Google Analytics and a local script.
+
+```html
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F46B15BRUF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F46B15BRUF');
+</script>
+
+<!-- Local script, path: assets/js/my-script.js -->
+{{ with resources.Get "js/my-script.js" | js.Build }}
+  <script defer src="{{ .RelPermalink }}"></script>
+{{ end }}
+```
+
+### Comment services
+
+Yue don't provide built-in config of comment services, but provides `layouts/partials/single/comments_custom.html`, where you can add scripts to enable comment services.
+
+```shell
+mkdir --parents layouts/partials/single/
+touch layouts/partials/single/comments_custom.html
+```
+
+Here is an example of adding [Giscus](https://giscus.app/).
+
+```html
+{{ $language := "" }}
+{{- /*
+Workaround for lowercase LanguagePrefix,
+see https://github.com/gohugoio/hugo/issues/9404
+*/ -}}
+{{ if eq site.LanguagePrefix "/zh-cn" }}
+  {{ $language = "zh-CN" }}
+{{ else }}
+  {{ $language = "en" }}
+{{ end }}
+<script src="https://giscus.app/client.js"
+        data-repo="CyrusYip/yue-test"
+        data-repo-id="P_9hJMbXtqr"
+        data-category="General"
+        data-category-id="SIB_ldsflk712ldRsjf7"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="{{ $language }}"
+        crossorigin="anonymous"
+        async>
+</script>
+```
+
+List of comment services: [Comments | Hugo](https://gohugo.io/content-management/comments/).
+
+## Support
+
+To report bugs, submit an [issue](https://github.com/CyrusYip/hugo-theme-yue/issues). To ask questions, start a [discussion](https://github.com/CyrusYip/hugo-theme-yue/discussions).
+
+## Further reading
+
+Hugo has many features, read [Hugo Documentation](https://gohugo.io/documentation/) to learn.
+
+## Development
+
+This project uses [hugo-bin - npm](https://www.npmjs.com/package/hugo-bin) to manage Hugo version. Prerequisite: [Node.js](https://nodejs.org/en) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+
+Clone this repository.
+
+```shell
+npm install
+npm run clean:server:shared
+```
+
+There are other useful commands listed in [package.json](package.json). To use recommended Hugo version, run `npx hugo`.
+
+---
+
+If you don't have Node.js and npm installed, just install the version listed in [package.json](package.json).
+
+```json
+"hugo-bin": {
+  "buildTags": "extended",
+  "version": "x.yyy.z"
+},
+```
+
+## Acknowledgement
+
+I have learned a lot from many projects. Thank you, developers.
+
+- [hugo-xmin](https://github.com/yihui/hugo-xmin/) (minimal templates)
+- [hugo-theme-jane](https://github.com/xianmin/hugo-theme-jane/) ([RSS template](https://github.com/xianmin/hugo-theme-jane/blob/6bef93b29e96bcf8b5b9a86b94cdd0dce99002bc/layouts/rss.xml#L30))
+- [hugo-theme-zen](https://github.com/frjo/hugo-theme-zen) ([language selector](https://github.com/frjo/hugo-theme-zen/blob/d3b2b6e1eea2bc67b3409238b9c347ab628876da/layouts/partials/language-selector.html))
+- [hugo-theme-gruvbox](https://github.com/schnerring/hugo-theme-gruvbox) (color)
+- [gruvbox](https://github.com/morhetz/gruvbox) (color)
+- [hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack) (source code, documentation and config)
+- [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod) (source code, documentation and config)
+
+## License
+
+This project is licensed under [MIT](LICENSE).
