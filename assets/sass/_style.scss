@@ -19,6 +19,17 @@ figure {
   margin-inline: 0;
 }
 
+// Heading anchor link
+.heading__anchor {
+  display: none;
+}
+
+.heading:hover {
+  .heading__anchor {
+    display: inline;
+  }
+}
+
 // Table
 .table-wrapper {
   // Horizontal scrollbar for table
