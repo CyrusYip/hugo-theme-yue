@@ -1,7 +1,7 @@
 name = 'Yue'
 license = 'MIT'
 licenselink = 'https://github.com/CyrusYip/hugo-theme-yue/blob/main/LICENSE'
-description = 'A minimal, multilangual and customizable theme, suitable for blogging'
+description = 'A minimal, multilingual and customizable theme, suitable for blogging'
 
 # The home page of the theme, where the source can be found
 homepage = 'https://github.com/CyrusYip/hugo-theme-yue'
@@ -16,8 +16,8 @@ tags = [
   'minimal',
   'light',
   'dark',
-  'multilangual',
-  'dark-mode',
+  'multilingual',
+  'dark mode',
   'personal'
 ]
 features = [

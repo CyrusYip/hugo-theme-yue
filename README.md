@@ -2,7 +2,7 @@
 
 **[Live demo](https://yue.cyrusyip.org/)**
 
-Yue is a minimal, multilangual and customizable Hugo theme, suitable for blogging.
+Yue is a minimal, multilingual and customizable Hugo theme, suitable for blogging.
 
 ## Features
 
@@ -10,7 +10,7 @@ Yue is a minimal, multilangual and customizable Hugo theme, suitable for bloggin
 - Mobile-first and responsive
 - Automatic dark mode
 - SCSS
-- Multilangual
+- Multilingual
     - Translation list in single page
     - Language selector (go to corresponding page or homepage)
 - Multiple authors
