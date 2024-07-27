@@ -2,13 +2,13 @@
   {{ if .IsTranslated -}}
   {{- /* link to translated page */ -}}
     {{ range .Translations -}}
-      <li class="menu__item"><a class="menu__link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+      <li class="language__item"><a class="language__link" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
     {{ end -}}
   {{ else -}}
   {{- /* link to home page */ -}}
     {{ range site.Languages -}}
       {{ if ne site.Language.Lang .Lang -}} {{- /* ignore current language */ -}}
-        <li class="menu__item"><a class="menu__link" href="{{ .Lang | relURL }}">{{ .LanguageName }}</a></li>
+        <li class="language__item"><a class="language__link" href="{{ .Lang | relURL }}">{{ .LanguageName }}</a></li>
       {{ end -}}
     {{ end -}}
   {{ end -}}

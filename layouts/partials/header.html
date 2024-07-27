@@ -1,6 +1,6 @@
 <h1>{{ site.Title }}</h1>
-  <nav class="menu language-selector">
-    <ul class="menu__list">
+  <nav class="menu language">
+    <ul class="menu__list language__list">
     {{- partial "header/menu.html" (dict "menuID" "main" "page" .) -}}
     {{- partial "header/language_selector.html" . -}}
     </ul>
