@@ -1,7 +1,10 @@
 // Global
 .html {
+  font-size: $base-font-size; // rem
+}
+
+.body {
   font-family: $font-family;
-  font-size: $base-font-size;
   line-height: $line-height;
   word-break: break-all;
 }
