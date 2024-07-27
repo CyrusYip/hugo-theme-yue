@@ -86,6 +86,10 @@ iframe {
   gap: 1rem;
 }
 
+.page-item.active {
+  font-weight: bolder;
+}
+
 // Page nav
 .page-nav {
   display: flex;
