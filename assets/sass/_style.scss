@@ -6,11 +6,15 @@
 .body {
   font-family: $font-family;
   line-height: $line-height;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .details-table-of-contents {
   margin-block: 1rem;
+}
+
+a {
+  word-break: break-all;
 }
 
 blockquote {
