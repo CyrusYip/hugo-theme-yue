@@ -68,7 +68,7 @@ iframe {
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
@@ -83,14 +83,14 @@ iframe {
 // Paginator
 .pagination {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 // Page nav
 .page-nav {
   display: flex;
   flex-direction: column;
-  margin-block-end: 16px;
+  margin-block: 1rem;
 }
 
 // Make [section post title / term post title] close to date info
