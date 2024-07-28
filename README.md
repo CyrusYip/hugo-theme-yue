@@ -56,7 +56,12 @@ cd my-website
 git submodule update --remote
 ```
 
-To subscribe updates, add <https://github.com/CyrusYip/hugo-theme-yue/commits.atom> to a feed aggregator (e.g. Inoreader).
+It's recommended to read [CHANGELOG.md](CHANGELOG.md) before updating the theme.
+
+You can subscribe updates and the changelog in a feed aggregator (e.g. Inoreader).
+
+- Updates: <https://github.com/CyrusYip/hugo-theme-yue/commits/main.atom>
+- Changelog: <https://github.com/CyrusYip/hugo-theme-yue/commits/main/CHANGELOG.md.atom>
 
 ### Clone website
 
@@ -238,6 +243,10 @@ To report bugs, submit an [issue](https://github.com/CyrusYip/hugo-theme-yue/iss
 ## Further reading
 
 Hugo has many features, read [Hugo Documentation](https://gohugo.io/documentation/) to learn.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Development
 
