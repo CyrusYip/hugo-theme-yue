@@ -34,7 +34,7 @@ languages:
     languageDirection: ltr
     languageName: English
     title: Yue # Shown in home page
-    weight: 1
+    weight: 10
     menus:
       main:
         - name: Home
@@ -67,7 +67,7 @@ languages:
     languageDirection: ltr
     languageName: 中文
     title: 月
-    weight: 2
+    weight: 20
     menus:
       main:
         - name: 主页
