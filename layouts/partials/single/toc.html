@@ -7,8 +7,8 @@
 {{ end }}
 
 {{ if and $tocEnabled $tocAvailable }}
-  <details class="details-table-of-contents"{{ $tocStatus | safeHTMLAttr }}>
-  <summary>{{ i18n "tableOfContents" }}</summary>
-  {{ .TableOfContents }}
+  <details class="toc"{{ $tocStatus | safeHTMLAttr }}>
+    <summary class="toc__summary">{{ i18n "tableOfContents" }}</summary>
+    {{ .TableOfContents }}
   </details>
 {{ end }}

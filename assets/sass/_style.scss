@@ -9,10 +9,10 @@
   word-break: break-word;
 }
 
-.details-table-of-contents {
+.toc {
   margin-block: 1rem;
 
-  >summary {
+  &__summary {
     font-weight: bolder;
     cursor: pointer;
   }
