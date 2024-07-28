@@ -11,6 +11,9 @@
 
 .details-table-of-contents {
   margin-block: 1rem;
+  > summary {
+    font-weight: bolder;
+  }
 }
 
 a {
