@@ -6,6 +6,7 @@ module:
 
 params:
   toc: true # Table of Contents
+  tocFolded: true
 
 markup:
   tableOfContents:

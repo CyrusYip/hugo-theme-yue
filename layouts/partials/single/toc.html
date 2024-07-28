@@ -1,7 +1,13 @@
 {{ $tocAvailable := gt (len .TableOfContents) 32 }} {{- /* length of empty TOC is 32 */ -}}
 {{ $tocEnabled := default site.Params.toc .Params.toc }}
+{{ $tocFolded := default site.Params.tocFolded .Params.tocFolded }}
+{{ $tocStatus := "" }} {{- /* folded by default */ -}}
+{{ if eq $tocFolded false }}
+  {{ $tocStatus = " open" }}
+{{ end }}
+
 {{ if and $tocEnabled $tocAvailable }}
-  <details class="details-table-of-contents" open>
+  <details class="details-table-of-contents"{{ $tocStatus | safeHTMLAttr }}>
   <summary>{{ i18n "tableOfContents" }}</summary>
   {{ .TableOfContents }}
   </details>
