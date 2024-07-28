@@ -36,12 +36,12 @@ figure {
 }
 
 // Heading anchor link
-.heading__anchor {
-  display: none;
-}
+.heading {
+  &__anchor {
+    display: none;
+  }
 
-.heading:hover {
-  .heading__anchor {
+  &:hover>&__anchor {
     display: inline;
   }
 }
