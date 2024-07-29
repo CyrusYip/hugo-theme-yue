@@ -2,10 +2,10 @@
 {{ if or ($pages.Next .) ($pages.Prev .) }}
   <nav class="page-nav">
     {{- with $pages.Next . }}
-      <a href="{{ .RelPermalink }}">{{ i18n "previousPage" }}{{.Title}}</a>
+      <a class="page-nav__previous-link" href="{{ .RelPermalink }}">{{ i18n "previousPage" }}{{.Title}}</a>
     {{- end }}
     {{- with $pages.Prev . }}
-      <a href="{{ .RelPermalink }}">{{ i18n "nextPage" }}{{.Title}}</a>
+      <a class="page-nav__next-link" href="{{ .RelPermalink }}">{{ i18n "nextPage" }}{{.Title}}</a>
     {{- end }}
   </nav>
 {{ end }}
