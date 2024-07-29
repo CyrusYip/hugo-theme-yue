@@ -2,6 +2,10 @@
 
 ## 2024-07-29
 
+Use fullwidth colon (`：`) for zh-CN in translation list. Example: `中文：文章 3`.
+
+---
+
 Apply BEM naming to translation list classes.
 
 ```html

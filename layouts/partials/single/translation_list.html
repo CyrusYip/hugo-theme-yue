@@ -1,8 +1,16 @@
+{{ $i18n := index site.Data "i18n" }} {{- /* data/i18n.yaml */ -}}
 {{ if .IsTranslated }}
   <ul class="translation-list">
     {{ range .Translations -}}
+    {{- /*
+    i18n function can't use translated language inside .Translations .
+    This is a workaround for using translated string inside .Translations.
+    Background: https://github.com/CyrusYip/hugo-theme-yue/issues/5
+    */ -}}
+    {{ $lang := .Language.Lang }}
+    {{ $colon := default ": " (index $i18n $lang "colonInTranslationList") }}
     <li class="translation-list__item">
-      <a class="translation-list__link" href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}: {{ .LinkTitle }}</a>
+      <a class="translation-list__link" href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}{{ $colon }}{{ .LinkTitle }}</a>
     </li>
     {{- end }}
   </ul>

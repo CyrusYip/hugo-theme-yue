@@ -123,7 +123,7 @@ Supported languages:
 
 To create a multilingual website, see [Multilingual mode | Hugo](https://gohugo.io/content-management/multilingual/) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml).
 
-Translation files are listed in [i18n](i18n) directory. Contributions for more language are welcome. If you want to contribute, refer to [i18n/en.yaml](i18n/en.yaml).
+Translation files are listed in [i18n](i18n) directory and [data/i18n.yaml](data/i18n.yaml). Contributions for more language are welcome. If you want to contribute, refer to [i18n/en.yaml](i18n/en.yaml) and [data/i18n.yaml](data/i18n.yaml).
 
 #### Title of tags and categories
 
