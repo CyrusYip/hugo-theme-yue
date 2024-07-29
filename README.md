@@ -16,6 +16,8 @@ Yue is a minimal, multilingual and customizable Hugo theme, suitable for bloggin
 - Multiple authors
 - Table of Content (foldable, only generated when available)
 - Modification date on home page, single page, section page and term page
+- Custom date format
+- Pagination on home page and section page
 - Tags and categories
 - Copyright notice (author and year span can be set)
 - RSS link
