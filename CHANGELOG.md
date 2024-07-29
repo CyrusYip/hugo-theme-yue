@@ -2,6 +2,10 @@
 
 ## 2024-07-29
 
+Rename `i18n_list.html` to `translation_list.html`.
+
+---
+
 Add classes to links inside the page nav.
 
 ```html
