@@ -1,8 +1,8 @@
 {{ if .IsTranslated }}
-  <ul class="translations">
+  <ul class="translation-list">
     {{ range .Translations -}}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}: {{ .LinkTitle }}</a>
+    <li class="translation-list__item">
+      <a class="translation-list__link" href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}: {{ .LinkTitle }}</a>
     </li>
     {{- end }}
   </ul>
