@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-07-30
+
+Font size of footer is set to `smaller` (about 83.33%).
+
 ## 2024-07-29
 
 Use fullwidth colon (`：`) for zh-CN in translation list. Example: `中文：文章 3`.
