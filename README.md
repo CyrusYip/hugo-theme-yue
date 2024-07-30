@@ -34,9 +34,9 @@ Yue is a minimal, multilingual and customizable Hugo theme, suitable for bloggin
 ## Features
 
 - Minimal appearance
-- Mobile-first and responsive
+- Easy to install (with Git and Hugo installed, create a website in a few seconds)
+- Detailed documentation
 - Automatic dark mode
-- SCSS
 - Multilingual
     - Translation list in single page
     - Language selector (go to corresponding page or homepage)
@@ -45,11 +45,13 @@ Yue is a minimal, multilingual and customizable Hugo theme, suitable for bloggin
 - Modification date on home page, single page, section page and term page
 - Custom date format
 - Pagination on home page and section page
+- Full-text RSS
 - Tags and categories
 - Copyright notice (author and year span can be set)
 - RSS link
-- Full-text RSS
 - Heading anchor link
+- Mobile-first and responsive
+- SCSS
 - Search engine optimization
     - [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
     - meta description
