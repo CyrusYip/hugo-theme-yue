@@ -4,6 +4,33 @@
 
 Yue is a minimal, multilingual and customizable Hugo theme, suitable for blogging.
 
+## Screenshots
+
+<details open>
+  <summary>Light mode on desktop</summary>
+  
+  ![light-desktop](https://cdn.jsdelivr.net/gh/CyrusYip/hugo-theme-yue@images/light-desktop.png)
+</details>
+
+<details>
+  <summary>Dark mode on desktop</summary>
+  
+  ![dark-desktop](https://cdn.jsdelivr.net/gh/CyrusYip/hugo-theme-yue@images/dark-desktop.png)
+</details>
+
+<details>
+  <summary>Light mode on mobile</summary>
+  
+  ![light-mobile](https://cdn.jsdelivr.net/gh/CyrusYip/hugo-theme-yue@images/light-mobile.png)
+</details>
+
+<details>
+  <summary>Dark mode on mobile</summary>
+  
+  ![dark-mobile](https://cdn.jsdelivr.net/gh/CyrusYip/hugo-theme-yue@images/dark-mobile.png)
+</details>
+
+
 ## Features
 
 - Minimal appearance
