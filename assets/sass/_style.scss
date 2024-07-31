@@ -121,18 +121,36 @@ iframe {
   margin-block-start: 0;
 }
 
+// Fenced code block (with line number, with language): div.highlight > div.chroma > table.lntable > tbody > tr > td.lntd > pre.chroma > code.language-javascript
+// Fenced code block (without line number, with language): div.highlight > pre.chroma > code.language-javascript
+// Fenced code block (without line number, without language) / indented code block: pre > code
+
 // Code block with specified language
-.highlight {
+div.highlight {
   // Horizontal scrollbar
   overflow-x: auto;
-
+  // Prevent two code blocks sticking together
   margin-block: 1rem;
+
+  // With line number
+  // Prevent italic character overflowing
+  >div.chroma>table.lntable {
+    padding-inline-end: 0.4rem; // same as line number's padding
+  }
+
+  // Without line number
+  // Prevent italic character overflowing (padding-inline-end doesn't work on Firefox Linux 128.0 and Chrome Linux 126.0.6478.182)
+  >pre.chroma {
+    padding-inline: 0.4rem;
+  }
 }
 
 // Code block [without specified language / indented with 4 spaces]
 pre:not(.chroma) {
   // Horizontal scrollbar
   overflow-x: auto;
+  padding-block: 1rem;
+  padding-inline: 0.4rem; // padding-inline-end doesn't work on Firefox Linux 128.0
 }
 
 .footer {

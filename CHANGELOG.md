@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-07-31
+
+Add padding to code block (https://github.com/CyrusYip/hugo-theme-yue/issues/7).
+
 ## 2024-07-30
 
 Font size of footer is set to `smaller` (about 83.33%).
