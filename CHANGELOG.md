@@ -2,6 +2,10 @@
 
 ## 2024-07-31
 
+Set the font size of the code block to 0.875rem (85% of the base font size).
+
+---
+
 Add padding to code block (https://github.com/CyrusYip/hugo-theme-yue/issues/7).
 
 ## 2024-07-30

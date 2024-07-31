@@ -153,6 +153,11 @@ pre:not(.chroma) {
   padding-inline: 0.4rem; // padding-inline-end doesn't work on Firefox Linux 128.0
 }
 
+pre {
+  // Smaller font size
+  font-size: 0.875rem;
+}
+
 .footer {
   font-size: smaller;
 }
