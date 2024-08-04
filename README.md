@@ -1,10 +1,12 @@
 # Yue
 
-**[Live demo](https://yue.cyrusyip.org/)**
+**[Demo website](https://yue.cyrusyip.org/)** | [Changelog](CHANGELOG.md)
 
 Yue is a minimal, multilingual and customizable Hugo theme, suitable for blogging.
 
 ## Screenshots
+
+Screenshots may be outdated, so it's better to visit the [demo website](https://yue.cyrusyip.org/).
 
 <details open>
   <summary>Light mode on desktop</summary>
