@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-09-06
+
+Set padding-inline to 0.25rem for inline code.
+
 ## 2024-07-31
 
 Set the font size of the code block to 0.875rem (85% of the base font size).

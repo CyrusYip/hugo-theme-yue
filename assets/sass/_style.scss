@@ -121,6 +121,11 @@ iframe {
   margin-block-start: 0;
 }
 
+// Inline code
+:not(pre)>code {
+  padding-inline: 0.25rem;
+}
+
 // Fenced code block (with line number, with language): div.highlight > div.chroma > table.lntable > tbody > tr > td.lntd > pre.chroma > code.language-javascript
 // Fenced code block (without line number, with language): div.highlight > pre.chroma > code.language-javascript
 // Fenced code block (without line number, without language) / indented code block: pre > code

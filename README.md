@@ -305,6 +305,8 @@ If you don't have Node.js and npm installed, just install the version listed in 
 },
 ```
 
+CHANGELOG.md should be updated in each commit.
+
 ## Websites built with Yue
 
 If you are using Yue and source code of your website is hosted on GitHub, you can add `hugo-theme-yue` topic to your repository.
