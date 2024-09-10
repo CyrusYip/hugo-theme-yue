@@ -2,3 +2,5 @@ zh-cn: # This should be zh-CN but Hugo convert languagePrefix to lowercase, see 
   colonInTranslationList: '：' # Example: "中文：文章 3"
 en:
   colonInTranslationList: ': ' # Example: "English: Post 3"
+fr:
+  colonInTranslationList: ': ' # Example: "Français: Post 3"
