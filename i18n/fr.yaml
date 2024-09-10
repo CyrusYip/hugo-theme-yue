@@ -1,0 +1,10 @@
+authorDelimiter: ", "
+lastmodWrapper: " (Modifié: {{ .lastmod }})"
+tableOfContents: Table des Matières
+colon: ':'
+previousPage: "Precédent: "
+nextPage: "Suivant: "
+themeInfo: Conçu avec {{ .hugo }} et {{ .yue }}
+
+404Message: La page que vous avez consultée n'a pas été trouvé.
+404HomeLinkMessage: Retourner à la page d'accueil
