@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-09-10
+
+Add support for French.
+
 ## 2024-09-06
 
 Set padding-inline to 0.25rem for inline code.
