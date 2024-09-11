@@ -157,6 +157,8 @@ To create a multilingual website, see [Multilingual mode | Hugo](https://gohugo.
 
 Translation files are listed in [i18n](i18n) directory and [data/i18n.yaml](data/i18n.yaml). Contributions for more language are welcome. If you want to contribute, refer to [i18n/en.yaml](i18n/en.yaml) and [data/i18n.yaml](data/i18n.yaml).
 
+If you want to keep contributing to translation, you can get latest changes by subscribing the feed of [i18n/en.yaml](i18n/en.yaml) (<https://github.com/CyrusYip/hugo-theme-yue/commits/main/i18n/en.yaml.atom>) in a RSS reader.
+
 #### Title of tags and categories
 
 If your website is not in English, you probably want to customize title of `/tags` and `/categories`.
