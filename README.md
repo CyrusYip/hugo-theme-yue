@@ -155,9 +155,16 @@ Supported languages:
 
 To create a multilingual website, see [Multilingual mode | Hugo](https://gohugo.io/content-management/multilingual/) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml).
 
-Translation files are listed in [i18n](i18n) directory and [data/i18n.yaml](data/i18n.yaml). Contributions for more language are welcome. If you want to contribute, refer to [i18n/en.yaml](i18n/en.yaml) and [data/i18n.yaml](data/i18n.yaml).
+Translation files are located in the [i18n](i18n) directory and [data/i18n.yaml](data/i18n.yaml). Contributions for additional languages are welcome.
 
-If you want to keep contributing to translation, you can get latest changes by subscribing the feed of [i18n/en.yaml](i18n/en.yaml) (<https://github.com/CyrusYip/hugo-theme-yue/commits/main/i18n/en.yaml.atom>) in a RSS reader.
+To contribute a new language:
+
+1. Create a language file (e.g., `fr.yaml` for French) in the [i18n](i18n) directory.
+1. Copy the content of [i18n/en.yaml](i18n/en.yaml) into the new file.
+1. Remove all comments (`# ...`) and translate the content.
+1. Translate the content in [data/i18n.yaml](data/i18n.yaml) as well.
+
+If you want to keep contributing to translation, you can get latest changes by subscribing the feed of [i18n/en.yaml](i18n/en.yaml) (<https://github.com/CyrusYip/hugo-theme-yue/commits/main/i18n/en.yaml.atom>) using an RSS reader.
 
 #### Title of tags and categories
 
