@@ -150,6 +150,7 @@ To learn configuration, see [Configure Hugo | Hugo](https://gohugo.io/getting-st
 Supported languages:
 
 - `en`: English
+- `fr`: French
 - `zh-CN`: Simplified Chinese
 
 To create a multilingual website, see [Multilingual mode | Hugo](https://gohugo.io/content-management/multilingual/) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml).
