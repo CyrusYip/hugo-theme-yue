@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-09-20
+
+Use table render hook to add wrapper. Users need to upgrade Hugo to 0.134.2 .
+
 ## 2024-09-11
 
 Add support for French.

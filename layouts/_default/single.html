@@ -4,12 +4,7 @@
   {{ partial "main/dates.html" . }}
   {{ partial "single/translation_list.html" . }}
   {{ partial "single/toc.html" . }}
-  {{- /*
-  Hack for adding table wrapper in order to add horizontal scrollbar
-  See https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5
-  */ -}}
-  {{ $wrappedTable := "<div class=table-wrapper>\n${1}\n</div>" }}
-  {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+  {{ .Content }}
   {{ partial "single/terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ partial "single/terms.html" (dict "taxonomy" "categories" "page" .) }}
   {{ partial "single/page_nav.html" . }}
