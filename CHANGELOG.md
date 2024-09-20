@@ -2,6 +2,10 @@
 
 ## 2024-09-20
 
+Only wrap text for headings (`<h1>~<h6>`) and paragraphs (`<p>`).
+
+---
+
 Replace `word-break: break-word;` with `overflow-wrap: break-word;` since the former is deprecated in [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/#valdef-word-break-break-word).
 
 > For compatibility with legacy content, the word-break property also supports a deprecated break-word keyword. When specified, this has the same effect as word-break: normal and overflow-wrap: anywhere, regardless of the actual value of the overflow-wrap property.
