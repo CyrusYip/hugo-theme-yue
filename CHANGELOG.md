@@ -2,6 +2,12 @@
 
 ## 2024-09-20
 
+Replace `word-break: break-word;` with `overflow-wrap: break-word;` since the former is deprecated in [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/#valdef-word-break-break-word).
+
+> For compatibility with legacy content, the word-break property also supports a deprecated break-word keyword. When specified, this has the same effect as word-break: normal and overflow-wrap: anywhere, regardless of the actual value of the overflow-wrap property.
+
+---
+
 Use table render hook to add wrapper. Users need to upgrade Hugo to 0.134.2 .
 
 ## 2024-09-11
