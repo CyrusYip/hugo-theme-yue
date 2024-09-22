@@ -1,8 +1,12 @@
 <!-- Timezone: UTC -->
 
+## 2024-09-22
+
+Break long words in lists to avoid overflowing.
+
 ## 2024-09-20
 
-Only wrap text for headings (`<h1>~<h6>`) and paragraphs (`<p>`).
+Only break long words for headings (`<h1>~<h6>`) and paragraphs (`<p>`).
 
 ---
 

@@ -34,6 +34,12 @@ The quick brown fox jumps over the lazy dog.The quick brown fox jumps over the l
 
 word aVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWord word
 
+List:
+
+- word aVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWord word
+
+1. word aVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWordaVeryLongWord word
+
 ### Long link
 
 A long URL: <https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURL>.
@@ -41,6 +47,12 @@ A long URL: <https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongUR
 A link with a long word: [aLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWordaLinkWithALongWord](https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURL).
 
 A link with a long text: [A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text. A link with a long text.](https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURL)
+
+List:
+
+- A long URL: <https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURL>.
+
+1. A long URL: <https://example.org/aVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURLaVeryLongURL>.
 
 ## Emphasis
 
