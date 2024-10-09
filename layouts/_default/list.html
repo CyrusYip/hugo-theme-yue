@@ -18,9 +18,11 @@
 {{ else if eq .Kind "taxonomy" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range .Pages.ByLinkTitle }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+  <section class="term-list">
+    {{ range .Pages.ByLinkTitle }}
+      <h2 class="term-list__item"><a class="term-list__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
+  </section>
 {{- /* term */ -}}
 {{ else }}
   <h1>{{ .Title }}</h1>

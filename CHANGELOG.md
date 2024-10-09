@@ -1,5 +1,21 @@
 <!-- Timezone: UTC -->
 
+## 2024-10-09
+
+Add class names for terms of a taxonomy, e.g., tags and categories. You can arrange terms into rows using this SCSS code:
+
+```scss
+.term-list {
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration-line: underline;
+  }
+}
+```
+
 ## 2024-09-22
 
 Break long words in lists to avoid overflowing.
