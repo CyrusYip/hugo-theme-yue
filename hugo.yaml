@@ -2,7 +2,7 @@
 module:
   hugoVersion:
     extended: true
-    min: 0.134.2
+    min: 0.136.0
 
 params:
   toc: true # Table of Contents

@@ -1,5 +1,11 @@
 <!-- Timezone: UTC -->
 
+## 2024-10-18
+
+Fix cell alignment in the table render hook. You need to upgrade Hugo to v0.136.0 .
+
+Relevant issue: [Markdown render hook for tables doesn't recognize unset column alignment · Issue #12886 · gohugoio/hugo](https://github.com/gohugoio/hugo/issues/12886).
+
 ## 2024-10-09
 
 Add class names for terms of a taxonomy, e.g., tags and categories. You can arrange terms into rows using this SCSS code:
