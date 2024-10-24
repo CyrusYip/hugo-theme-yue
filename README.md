@@ -58,6 +58,7 @@ Screenshots may be outdated, so it's better to visit the [demo website](https://
     - [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
     - meta description
 - [Open Graph](https://ogp.me/)
+- Page count to sections (`/posts/`, `/tags/`, etc.)
 
 To find out all features, check [hugo.yaml](hugo.yaml) (default configuration) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml) (demo site's configuration).
 

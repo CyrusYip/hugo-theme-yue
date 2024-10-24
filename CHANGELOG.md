@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-10-24
+
+Add the page count to sections (`/posts/`, `/tags/`, etc.).
+
 ## 2024-10-18
 
 Fix cell alignment in the table render hook. You need to upgrade Hugo to v0.136.0 .
