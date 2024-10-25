@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Rename `head/custom.html` to `head/head-end.html`. If you have `head/custom.html`, you need to rename it accordingly.
+
+---
+
 Rename `_custom-*.scss` to `_style-*.scss`. If you have custom SCSS files, you need to rename them accordingly.
 
 ---

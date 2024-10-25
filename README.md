@@ -213,11 +213,11 @@ References:
 
 ### head (scripts/styles)
 
-You can add external styles and scripts in `layouts/partials/head/custom.html`, which is appended to [`<head>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
+You can add external styles and scripts in `layouts/partials/head/head-end.html`, which is appended to [`<head>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
 
 ```shell
 mkdir --parents layouts/partials/head/
-touch layouts/partials/head/custom.html
+touch layouts/partials/head/head-end.html
 ```
 
 Here is an example of adding Google Analytics and a local script.
