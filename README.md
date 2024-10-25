@@ -59,6 +59,10 @@ Screenshots may be outdated, so it's better to visit the [demo website](https://
     - meta description
 - [Open Graph](https://ogp.me/)
 - Page count to sections (`/posts/`, `/tags/`, etc.)
+- Customization
+    - Favicon
+    - Styles (SCSS)
+    - Contents (HTML)
 
 To find out all features, check [hugo.yaml](hugo.yaml) (default configuration) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml) (demo site's configuration).
 
@@ -181,19 +185,15 @@ title: Chinese Tags
 
 ## Customize
 
+Yue allows you to customize favicon, styles (SCSS), and contents (HTML).
+
 ### Favicon
 
 Favicon is the icon next to title in a browser tab. To use your favicon, put `favicon.ico` under `static` directory. You can create `favicon.ico` on online favicon.ico generators.
 
-### Styles
+### Styles (SCSS)
 
 Yue uses SCSS (libsass) to add styles. All files are in [assets/scss](assets/scss).To customize styles, create `assets/scss/_style-start.scss` and `assets/scss/_style-end.scss`.
-
-```shell
-mkdir --parents assets/scss/
-touch assets/scss/_style-start.scss
-touch assets/scss/_style-end.scss
-```
 
 `_style-start.scss` is applied first, and you can override variables in this file.
 
@@ -211,16 +211,43 @@ References:
 - [Sass: Sass Basics](https://sass-lang.com/guide/)
 - [Directory structure | Hugo](https://gohugo.io/getting-started/directory-structure/)
 
-### head (scripts/styles)
+### Contents (HTML)
 
-You can add external styles and scripts in `layouts/partials/head/head-end.html`, which is appended to [`<head>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head).
+You can create these files to insert HTML code.
 
-```shell
-mkdir --parents layouts/partials/head/
-touch layouts/partials/head/head-end.html
+- `layouts/partials/head/head-start.html`
+- `layouts/partials/head/head-end.html`
+- `layouts/partials/single/single-end.html`
+- `layouts/partials/body/body-end.html`
+
+#### head-start.html
+
+`head-start.html` is added near the start of the `<head>` element.
+
+Use cases:
+
+- Preload scripts
+- Load scripts
+- Load styles
+
+Here is an example of preloading scripts:
+
+```html
+<link rel="preload" as="script" href="https://unpkg.com/@swup/head-plugin@2">
+<link rel="preload" as="script" href="https://unpkg.com/@swup/preload-plugin@3">
+<link rel="preload" as="script" href="https://unpkg.com/swup@4">
 ```
 
-Here is an example of adding Google Analytics and a local script.
+#### head-end.html
+
+`head-end.html` is added to the end of the `<head>` element.
+
+Use cases:
+
+- Load scripts
+- Load styles
+
+Here is an example of adding Google Analytics and a local script:
 
 ```html
 <!-- Google Analytics -->
@@ -239,16 +266,15 @@ Here is an example of adding Google Analytics and a local script.
 {{ end }}
 ```
 
-### Comment services
+#### single-end.html
 
-Yue don't provide built-in config of comment services, but provides `layouts/partials/single/single-end.html`, where you can add scripts to enable comment services.
+`single-end.html` is added to the end of the `<main>` element in a post.
 
-```shell
-mkdir --parents layouts/partials/single/
-touch layouts/partials/single/single-end.html
-```
+Use cases:
 
-Here is an example of adding [Giscus](https://giscus.app/).
+- comment services, e.g., Disqus and giscus
+
+Here is an example of adding [Giscus](https://giscus.app/):
 
 ```html
 {{ $language := "" }}
@@ -279,6 +305,14 @@ see https://github.com/gohugoio/hugo/issues/9404
 ```
 
 List of comment services: [Comments | Hugo](https://gohugo.io/content-management/comments/).
+
+#### body-end.html
+
+`body-end.html` is added to the end of the `<body>` element.
+
+Use cases:
+
+- Dynamically load scripts
 
 ## Support
 
