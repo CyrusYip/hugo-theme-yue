@@ -187,21 +187,21 @@ Favicon is the icon next to title in a browser tab. To use your favicon, put `fa
 
 ### Styles
 
-Yue uses SCSS (libsass) to add styles. All files are in [assets/scss](assets/scss).To customize styles, create `assets/scss/_custom-start.scss` and `assets/scss/_custom-end.scss`.
+Yue uses SCSS (libsass) to add styles. All files are in [assets/scss](assets/scss).To customize styles, create `assets/scss/_style-start.scss` and `assets/scss/_style-end.scss`.
 
 ```shell
 mkdir --parents assets/scss/
-touch assets/scss/_custom-start.scss
-touch assets/scss/_custom-end.scss
+touch assets/scss/_style-start.scss
+touch assets/scss/_style-end.scss
 ```
 
-`_custom-start.scss` is applied first, and you can override variables in this file.
+`_style-start.scss` is applied first, and you can override variables in this file.
 
 ```scss
 $base-font-size: 15px;
 ```
 
-`_custom-end.scss` is applied last, and you can add styles in this file.
+`_style-end.scss` is applied last, and you can add styles in this file.
 
 Vanilla CSS is also valid in SCSS.
 

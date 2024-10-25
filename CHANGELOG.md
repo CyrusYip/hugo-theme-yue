@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Rename `_custom-*.scss` to `_style-*.scss`. If you have custom SCSS files, you need to rename them accordingly.
+
+---
+
 Move SCSS partial for faster CSS loading.
 
 ---
