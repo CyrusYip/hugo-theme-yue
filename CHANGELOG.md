@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-10-25
+
+Remove unused JavaScript code.
+
 ## 2024-10-24
 
 Add the page count to sections (`/posts/`, `/tags/`, etc.).
