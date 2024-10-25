@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Rename `/assets/sass/` to `/assets/scss/`. If you have custom SCSS files, you need to rename them accordingly.
+
+---
+
 Remove unused JavaScript code.
 
 ## 2024-10-24
