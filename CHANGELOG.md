@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Move SCSS partial for faster CSS loading.
+
+---
+
 Rename `/assets/sass/` to `/assets/scss/`. If you have custom SCSS files, you need to rename them accordingly.
 
 ---
