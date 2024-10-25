@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Add `head-start.html` and `body-end.html`.
+
+---
+
 Rename `comments_custom.html` to `single-end.html`. If you have `comments_custom.html`, you need to rename it accordingly.
 
 ---
