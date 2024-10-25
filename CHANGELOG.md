@@ -2,6 +2,10 @@
 
 ## 2024-10-25
 
+Rename `comments_custom.html` to `single-end.html`. If you have `comments_custom.html`, you need to rename it accordingly.
+
+---
+
 Rename `head/custom.html` to `head/head-end.html`. If you have `head/custom.html`, you need to rename it accordingly.
 
 ---

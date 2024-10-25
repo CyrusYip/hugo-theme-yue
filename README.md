@@ -241,11 +241,11 @@ Here is an example of adding Google Analytics and a local script.
 
 ### Comment services
 
-Yue don't provide built-in config of comment services, but provides `layouts/partials/single/comments_custom.html`, where you can add scripts to enable comment services.
+Yue don't provide built-in config of comment services, but provides `layouts/partials/single/single-end.html`, where you can add scripts to enable comment services.
 
 ```shell
 mkdir --parents layouts/partials/single/
-touch layouts/partials/single/comments_custom.html
+touch layouts/partials/single/single-end.html
 ```
 
 Here is an example of adding [Giscus](https://giscus.app/).
