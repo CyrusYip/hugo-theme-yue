@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2024-10-31
+
+Add `_index.md` for sections.
+
 ## 2024-10-25
 
 Add `head-start.html` and `body-end.html`.
