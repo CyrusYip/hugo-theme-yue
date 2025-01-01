@@ -86,7 +86,7 @@ languages:
           pageRef: /about
           weight: 50
     params:
-      dateFormat: 2006年1月02日
+      dateFormat: 2006年1月2日
       author: 小月
       footer:
         copyright:
