@@ -48,12 +48,10 @@ a {
 blockquote {
   background-color: var(--background-color1);
 
-  // BG fix
   [dir=rtl] & {
     border-right: 0.5rem solid var(--accent-color);
   }    
 
-  // BG fix
   [dir=ltr] & {
     border-left: 0.5rem solid var(--accent-color);
   }
