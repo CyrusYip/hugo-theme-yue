@@ -154,6 +154,7 @@ To learn configuration, see [Configure Hugo | Hugo](https://gohugo.io/getting-st
 
 Supported languages:
 
+- `ar`: Arabic
 - `en`: English
 - `fr`: French
 - `zh-CN`: Simplified Chinese

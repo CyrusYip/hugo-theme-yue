@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2025-02-26
+
+Support Arabic and improve French translation.
+
 ## 2025-01-01
 
 Remove leading zero in Chinese dateFormat. Example: 2019年3月09日 -> 2019年3月9日.
