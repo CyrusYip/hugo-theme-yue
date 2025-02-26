@@ -1,0 +1,10 @@
+authorDelimiter: ", "
+lastmodWrapper: " (آخر تحديث: ‏{{ .lastmod }})"
+tableOfContents: الفهرس
+colon: ':'
+previousPage: "الصفحة السابقة: "
+nextPage: "الصفحة التالية: "
+themeInfo: مبني بـ {{ .hugo }} و{{ .yue }}
+
+404Message: الصفقة المطبوبة غير موجودة.
+404HomeLinkMessage: العودة إلى الصفحة الرئيسيسة
