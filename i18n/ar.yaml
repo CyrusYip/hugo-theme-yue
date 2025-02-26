@@ -1,0 +1,14 @@
+# Sort according to appearance order
+
+# Single page
+authorDelimiter: ", "
+lastmodWrapper: " (آخر تحديث: ‏{{ .lastmod }})"
+tableOfContents: الفهرس
+colon: ':' # Taxonomy, e.g. Tags:
+previousPage: "الصفحة السابقة: " # Page nav
+nextPage: "الصفحة التالية: " # Page nav
+themeInfo: مبني بـ {{ .hugo }} و{{ .yue }} # Footer
+
+# 404 page, e.g. /en/404.html
+404Message: الصفقة المطبوبة غير موجودة.
+404HomeLinkMessage: العودة إلى الصفحة الرئيسيسة
