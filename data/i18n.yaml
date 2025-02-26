@@ -1,3 +1,5 @@
+ar:
+  colonInTranslationList: ': ' # Example: "العربية: المقالة الثالثة"
 en:
   colonInTranslationList: ': ' # Example: "English: Post 3"
 fr:
