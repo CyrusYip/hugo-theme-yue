@@ -5,7 +5,7 @@
 {{ partialCached "head/scss.html" . }}
 {{ partial "head/favicon.html" . }}
 {{ partial "head/description.html" . }}
-{{ template "_internal/opengraph.html" . }}
-{{ template "_internal/schema.html" . }}
+{{ partial "opengraph.html" . }} {{/* embedded template */}}
+{{ partial "schema.html" . }} {{/* embedded template */}}
 {{ partial "head/rss_link.html" . }}
 {{ partial "head/head-end.html" . }}

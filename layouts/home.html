@@ -15,6 +15,6 @@
     {{- end }}
   {{ end }}
   <nav class="paginator">
-  {{- template "_internal/pagination.html" . }}
+  {{- partial "pagination.html" . }} {{/* embedded template */}}
   </nav>
 {{ end }}

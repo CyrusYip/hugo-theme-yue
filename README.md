@@ -216,10 +216,10 @@ References:
 
 You can create these files to insert HTML code.
 
-- `layouts/partials/head/head-start.html`
-- `layouts/partials/head/head-end.html`
-- `layouts/partials/single/single-end.html`
-- `layouts/partials/body/body-end.html`
+- `layouts/_partials/head/head-start.html`
+- `layouts/_partials/head/head-end.html`
+- `layouts/_partials/single/single-end.html`
+- `layouts/_partials/body/body-end.html`
 
 #### head-start.html
 

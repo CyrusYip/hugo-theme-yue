@@ -1,5 +1,11 @@
 <!-- Timezone: UTC -->
 
+## 2025-05-06
+
+Adapt to the new template system introduced by Hugo 0.146.0 . It's recommended to upgrade Hugo to 0.147.1 or newer version.
+
+`layouts/partials/` has been renamed to `layouts/_partials/`. If you have customized partial files in your site, you  will need to rename them accordingly. For example, rename `layouts/partials/head/head-start.html` to `layouts/_partials/head/head-start.html`.
+
 ## 2025-02-26
 
 Support Arabic and improve French translation.

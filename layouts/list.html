@@ -12,7 +12,7 @@
     <h2 class="section-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   {{ end }}
   <nav class="paginator">
-  {{- template "_internal/pagination.html" . }}
+  {{- partial "pagination.html" . }} {{/* embedded template */}}
   </nav>
 {{- /* sort taxonomy by LinkTitle */ -}}
 {{ else if eq .Kind "taxonomy" }}
