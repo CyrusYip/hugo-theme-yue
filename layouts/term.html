@@ -1,0 +1,8 @@
+{{ define "main" }}
+  <h1>{{ .Title }} <sup>{{ len .Pages }}</sup></h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    {{ partial "main/dates.html" . }}
+    <h2 class="term-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+{{ end }}

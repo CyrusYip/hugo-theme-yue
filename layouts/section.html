@@ -1,0 +1,19 @@
+{{- /* paginate section */ -}}
+{{ define "main" }}
+{{ $pages := .Pages }}
+{{ $sectionPagerSize := or site.Params.sectionPagerSize 10 }}
+{{ $paginator := .Paginate $pages $sectionPagerSize }}
+
+  <h1>{{ .Title }} <sup>{{ len .Pages }}</sup></h1>
+  {{ .Content }}
+
+  {{ range $paginator.Pages }}
+    {{- /* show date and lastmod */ -}}
+    {{ partial "main/dates.html" . }}
+    <h2 class="section-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ end }}
+
+  <nav class="paginator">
+  {{- partial "pagination.html" . }} {{/* embedded template */}}
+  </nav>
+{{ end }}

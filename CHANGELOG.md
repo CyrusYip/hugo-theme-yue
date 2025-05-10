@@ -4,6 +4,10 @@
 
 Rename `single.html` to `page.html`.
 
+---
+
+Split `list.html` into `section.html`, `taxonomy.html` and `term.html`, so templates are more understandable.
+
 ## 2025-05-06
 
 Adapt to the new template system introduced by Hugo 0.146.0 . It's recommended to upgrade Hugo to 0.147.1 or newer version.

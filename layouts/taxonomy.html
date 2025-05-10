@@ -1,0 +1,10 @@
+{{- /* sort taxonomy by LinkTitle */ -}}
+{{ define "main" }}
+  <h1>{{ .Title }} <sup>{{ len .Pages }}</sup></h1>
+  {{ .Content }}
+  <section class="term-list">
+    {{ range .Pages.ByLinkTitle }}
+      <h2 class="term-list__item"><a class="term-list__link" href="{{ .RelPermalink }}">{{ .LinkTitle }} <sup>{{ len .Pages }}</sup></a></h2>
+    {{ end }}
+  </section>
+{{ end }}
