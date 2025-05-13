@@ -4,6 +4,10 @@
 
 Rename `single-end.html` to `page-end.html`.
 
+---
+
+Rename `_partials/single/` to `_partials/page/`.
+
 ## 2025-05-10
 
 Rename `single.html` to `page.html`.

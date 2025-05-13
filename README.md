@@ -218,7 +218,7 @@ You can create these files to insert HTML code.
 
 - `layouts/_partials/head/head-start.html`
 - `layouts/_partials/head/head-end.html`
-- `layouts/_partials/single/page-end.html`
+- `layouts/_partials/page/page-end.html`
 - `layouts/_partials/body/body-end.html`
 
 #### head-start.html

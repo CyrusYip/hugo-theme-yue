@@ -1,12 +1,12 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ partial "single/author.html" . }}
+  {{ partial "page/author.html" . }}
   {{ partial "main/dates.html" . }}
-  {{ partial "single/translation_list.html" . }}
-  {{ partial "single/toc.html" . }}
+  {{ partial "page/translation_list.html" . }}
+  {{ partial "page/toc.html" . }}
   {{ .Content }}
-  {{ partial "single/terms.html" (dict "taxonomy" "tags" "page" .) }}
-  {{ partial "single/terms.html" (dict "taxonomy" "categories" "page" .) }}
-  {{ partial "single/page_nav.html" . }}
-  {{ partial "single/page-end.html" . }}
+  {{ partial "page/terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ partial "page/terms.html" (dict "taxonomy" "categories" "page" .) }}
+  {{ partial "page/page_nav.html" . }}
+  {{ partial "page/page-end.html" . }}
 {{ end }}
