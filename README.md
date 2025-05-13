@@ -218,7 +218,7 @@ You can create these files to insert HTML code.
 
 - `layouts/_partials/head/head-start.html`
 - `layouts/_partials/head/head-end.html`
-- `layouts/_partials/single/single-end.html`
+- `layouts/_partials/single/page-end.html`
 - `layouts/_partials/body/body-end.html`
 
 #### head-start.html
@@ -267,9 +267,9 @@ Here is an example of adding Google Analytics and a local script:
 {{ end }}
 ```
 
-#### single-end.html
+#### page-end.html
 
-`single-end.html` is added to the end of the `<main>` element in a post.
+`page-end.html` is added to the end of the `<main>` element in a post.
 
 Use cases:
 

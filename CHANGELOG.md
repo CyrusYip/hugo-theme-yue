@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2025-05-13
+
+Rename `single-end.html` to `page-end.html`.
+
 ## 2025-05-10
 
 Rename `single.html` to `page.html`.
