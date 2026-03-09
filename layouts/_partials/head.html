@@ -2,7 +2,8 @@
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partial "head/head-start.html" . }}
-{{ partialCached "head/scss.html" . }}
+{{/*  {{ partialCached "head/scss.html" . }}  */}}
+{{ partialCached "head/css.html" . }}
 {{ partial "head/favicon.html" . }}
 {{ partial "head/description.html" . }}
 {{ partial "opengraph.html" . }} {{/* embedded template */}}
