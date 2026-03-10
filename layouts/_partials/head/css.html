@@ -1,10 +1,11 @@
 {{- $styles := slice
   (resources.Get "css/base.css")
   (resources.Get "css/layout.css")
+  (resources.Get "css/style.css")
   (resources.Get "css/color-scheme.css")
 }}
 {{/* bundle CSS files */}}
-{{- $style := $styles | resources.Concat "css/style.css" }}
+{{- $style := $styles | resources.Concat "css/styles.css" }}
 
 {{- with $style }}
   {{- if hugo.IsDevelopment }}
