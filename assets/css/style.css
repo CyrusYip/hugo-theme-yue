@@ -72,14 +72,6 @@ figure {
   text-align: start;
 }
 
-/* Avoid overflow */
-svg,
-img,
-video,
-iframe {
-  max-width: 100%;
-}
-
 /* Menu and language selector */
 .menu__list {
   display: flex;

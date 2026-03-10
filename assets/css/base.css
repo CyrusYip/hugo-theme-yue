@@ -8,6 +8,14 @@
   margin: 0;
 }
 
+/* Avoid overflow */
+svg,
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
