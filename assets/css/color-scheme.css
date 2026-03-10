@@ -1,0 +1,84 @@
+/* Color, see https://github.com/morhetz/gruvbox */
+
+/* Light theme by default */
+:root {
+  --background-color: #fbf1c7; /* body */
+  --background-color1: #ebdbb2; /* blockquote, code block, border, table, hr */
+  --foreground-color: #3c3836; /* text */
+  --foreground-color3: #665c54; /* figcaption */
+  --accent-color: #af3a03; /* link, blockquote */
+}
+
+/* Override variables for dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #282828;
+    --background-color1: #3c3836;
+    --foreground-color: #ebdbb2;
+    --foreground-color3: #bdae93; /* figcaption */
+    --accent-color: #fe8019;
+  }
+}
+
+/* Set color */
+.body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground-color);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--background-color1);
+}
+
+.footer {
+  border-top: 1px solid var(--background-color1);
+}
+
+blockquote {
+  background-color: var(--background-color1);
+
+  [dir=rtl] & {
+    border-right: 0.5rem solid var(--accent-color);
+  }    
+
+  [dir=ltr] & {
+    border-left: 0.5rem solid var(--accent-color);
+  }
+}
+
+/* Don't apply inline code's style to code block */
+:not(pre)>code {
+  background-color: var(--background-color1);
+}
+
+hr {
+  background: var(--background-color1);
+}
+
+/* Table */
+table {
+  background-color: var(--background-color1);
+}
+
+td,
+th {
+  border: 1px solid var(--background-color);
+}
+
+/* Figure */
+figcaption {
+  color: var(--foreground-color3);
+}
