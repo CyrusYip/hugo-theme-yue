@@ -1,0 +1,14 @@
+/* On mobile, add little margins */
+.body {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* On desktop, use fixed width and center <body> */
+@media (min-width: 800px) {
+  .body {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,4 +1,11 @@
-{{- with resources.Get "css/main.css" }}
+{{- $styles := slice
+  (resources.Get "css/base.css")
+  (resources.Get "css/layout.css")
+}}
+{{/* bundle CSS files */}}
+{{- $style := $styles | resources.Concat "css/style.css" }}
+
+{{- with $style }}
   {{- if hugo.IsDevelopment }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
