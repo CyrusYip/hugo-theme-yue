@@ -1,3 +1,7 @@
+{{/*
+Styles are mobile-first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier). When it's difficult to add classes, I will use tag names.
+*/}}
 {{- $styles := slice
   (resources.Get "css/base.css")
   (resources.Get "css/layout.css")
