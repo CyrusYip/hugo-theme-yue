@@ -1,11 +1,11 @@
 /* Global */
 .html {
-  font-size: 18px; /* rem */
+  font-size: var(--base-font-size); /* rem */
 }
 
 .body {
-  font-family: sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
 }
 
 p,
