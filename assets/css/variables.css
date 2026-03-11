@@ -5,17 +5,13 @@
   --line-height: 1.5;
 
   /* Layout */
-  --body-margin-left: 16px;
-  --body-margin-right: 16px;
-  --body-max-width: 768px;
-  --desktop-breakpoint: calc(
-    var(--body-margin-left) +
-    var(--body-max-width) +
-    var(--body-margin-right)
-  );
+  --body-min-margin: 16px; /* Left margin and right margin */
+  --body-available-width: calc(
+    100% - 2 * var(--body-min-margin)
+    );  /* Mobile width */
+  --body-max-width: 768px; /* Desktop width */
 
   /* Color, see https://github.com/morhetz/gruvbox */
-
   /* Light theme */
   --background-color-light: #fbf1c7;
   --background-color1-light: #ebdbb2;
