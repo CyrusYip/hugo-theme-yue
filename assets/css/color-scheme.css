@@ -2,21 +2,21 @@
 
 /* Light theme by default */
 :root {
-  --background-color: #fbf1c7; /* body */
-  --background-color1: #ebdbb2; /* blockquote, code block, border, table, hr */
-  --foreground-color: #3c3836; /* text */
-  --foreground-color3: #665c54; /* figcaption */
-  --accent-color: #af3a03; /* link, blockquote */
+  --background-color: var(--background-color-light); /* body */
+  --background-color1: var(--background-color1-light); /* blockquote, code block, border, table, hr */
+  --foreground-color: var(--foreground-color-light); /* text */
+  --foreground-color3: var(--foreground-color3-light); /* figcaption */
+  --accent-color: var(--accent-color-light); /* link, blockquote */
 }
 
 /* Override variables for dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #282828;
-    --background-color1: #3c3836;
-    --foreground-color: #ebdbb2;
-    --foreground-color3: #bdae93; /* figcaption */
-    --accent-color: #fe8019;
+    --background-color: var(--background-color-dark);
+    --background-color1: var(--background-color1-dark);
+    --foreground-color: var(--foreground-color-dark);
+    --foreground-color3: var(--foreground-color3-dark);
+    --accent-color: var(--accent-color-dark);
   }
 }
 
