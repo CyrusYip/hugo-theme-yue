@@ -53,7 +53,7 @@ Screenshots may be outdated, so it's better to visit the [demo website](https://
 - RSS link
 - Heading anchor link
 - Mobile-first and responsive
-- SCSS
+- Vanilla CSS
 - Search engine optimization
     - [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata)
     - meta description
@@ -61,7 +61,7 @@ Screenshots may be outdated, so it's better to visit the [demo website](https://
 - Page count to sections (`/posts/`, `/tags/`, etc.)
 - Customization
     - Favicon
-    - Styles (SCSS)
+    - Styles (CSS)
     - Contents (HTML)
 
 To find out all features, check [hugo.yaml](hugo.yaml) (default configuration) and [exampleSite/hugo.yaml](exampleSite/hugo.yaml) (demo site's configuration).
@@ -186,7 +186,7 @@ title: Chinese Tags
 
 ## Customize
 
-Yue allows you to customize favicon, styles (SCSS), and contents (HTML).
+Yue allows you to customize favicon, styles (CSS), and contents (HTML).
 
 ### Favicon
 
