@@ -192,24 +192,33 @@ Yue allows you to customize favicon, styles (SCSS), and contents (HTML).
 
 Favicon is the icon next to title in a browser tab. To use your favicon, put `favicon.ico` under `static` directory. You can create `favicon.ico` on online favicon.ico generators.
 
-### Styles (SCSS)
+### Styles (CSS)
 
-Yue uses SCSS (libsass) to add styles. All files are in [assets/scss](assets/scss).To customize styles, create `assets/scss/_style-start.scss` and `assets/scss/_style-end.scss`.
+Styles are written in CSS. All files are in [assets/css](assets/css). To customize styles, add CSS file(s) to `assets/css/custom/` directory, and subdirectories are supported.
 
-`_style-start.scss` is applied first, and you can override variables in this file.
+Here is an example of hiding the website title:
 
-```scss
-$base-font-size: 15px;
+```css
+/* assets/css/custom/style/hide-website-title.css */
+.header > h1 {
+  display: none;
+}
 ```
 
-`_style-end.scss` is applied last, and you can add styles in this file.
+There are a bunch of variables set in [assets/css/theme/variables.css](assets/css/theme/variables.css). You can override these variables.
 
-Vanilla CSS is also valid in SCSS.
+Here is an example of increasing the content width:
+
+```css
+/* assets/css/custom/variables.css */
+:root {
+  --body-max-width: 800px;
+}
+```
 
 References:
 
 - [CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Sass: Sass Basics](https://sass-lang.com/guide/)
 - [Directory structure | Hugo](https://gohugo.io/getting-started/directory-structure/)
 
 ### Contents (HTML)

@@ -1,7 +1,7 @@
-/* Smaller font size */
+/* Increase body width */
 
 /* 
 :root {
-  --base-font-size: 16px;
+  --body-max-width: 800px;
 }
 */

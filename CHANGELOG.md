@@ -1,5 +1,11 @@
 <!-- Timezone: UTC -->
 
+## 2026-03-13
+
+Migrate from SCSS to vanilla CSS since libsass was deprecated in Hugo v0.153.0 (see <https://github.com/CyrusYip/hugo-theme-yue/issues/11>).
+
+To customize styles, add CSS file(s) to `assets/css/custom/` directory. See the latest README for details.
+
 ## 2025-05-13
 
 Rename `single-end.html` to `page-end.html`.
