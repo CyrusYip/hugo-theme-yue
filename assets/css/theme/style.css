@@ -117,7 +117,7 @@ figure {
 }
 
 /* Inline code */
-:not(pre)>code {
+:not(pre) > code {
   padding-inline: 0.25rem;
 }
 

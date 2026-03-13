@@ -3,7 +3,9 @@
 /* Light theme by default */
 :root {
   --background-color: var(--background-color-light); /* body */
-  --background-color1: var(--background-color1-light); /* blockquote, code block, border, table, hr */
+  --background-color1: var(
+    --background-color1-light
+  ); /* blockquote, code block, border, table, hr */
   --foreground-color: var(--foreground-color-light); /* text */
   --foreground-color3: var(--foreground-color3-light); /* figcaption */
   --accent-color: var(--accent-color-light); /* link, blockquote */
@@ -50,17 +52,17 @@ a {
 blockquote {
   background-color: var(--background-color1);
 
-  [dir=rtl] & {
+  [dir="rtl"] & {
     border-right: 0.5rem solid var(--accent-color);
-  }    
+  }
 
-  [dir=ltr] & {
+  [dir="ltr"] & {
     border-left: 0.5rem solid var(--accent-color);
   }
 }
 
 /* Don't apply inline code's style to code block */
-:not(pre)>code {
+:not(pre) > code {
   background-color: var(--background-color1);
 }
 

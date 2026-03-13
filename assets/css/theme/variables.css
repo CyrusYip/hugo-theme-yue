@@ -8,7 +8,7 @@
   --body-min-margin: 16px; /* Left margin and right margin */
   --body-available-width: calc(
     100% - 2 * var(--body-min-margin)
-    );  /* Mobile width */
+  ); /* Mobile width */
   --body-max-width: 768px; /* Desktop width */
 
   /* Color, see https://github.com/morhetz/gruvbox */
