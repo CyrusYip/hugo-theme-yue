@@ -1,0 +1,8 @@
+/*
+On mobile, set max width and min margins
+On desktop, set fixed width and max margins
+*/
+.body {
+  width: min(var(--body-available-width), var(--body-max-width));
+  margin-inline: auto;
+}

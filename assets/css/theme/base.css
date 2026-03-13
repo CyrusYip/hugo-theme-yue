@@ -8,11 +8,19 @@
   margin: 0;
 }
 
+/* Avoid overflow */
+svg,
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
 
-// List
+/* List */
 .menu__list,
 .translation-list,
 .pagination {
@@ -20,8 +28,8 @@ a {
   padding-inline-start: 0;
 }
 
-// Task list
-ul:has(>li>input[type="checkbox"]) {
+/* Task list */
+ul:has(> li > input[type="checkbox"]) {
   list-style-type: none;
   padding-inline-start: 1em;
 }

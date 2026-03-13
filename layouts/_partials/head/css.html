@@ -1,0 +1,25 @@
+{{/*
+Styles are mobile-first. Desktop styles are wrapped in media queries.
+Naming convention: BEM (Block, Element, Modifier). When it's difficult to add classes, I will use tag names.
+*/}}
+{{- $themeStyles := slice
+  (resources.Get "css/theme/variables.css")
+  (resources.Get "css/theme/base.css")
+  (resources.Get "css/theme/layout.css")
+  (resources.Get "css/theme/style.css")
+  (resources.Get "css/theme/color-scheme.css")
+  (resources.Get "css/theme/syntax-highlight.css")
+}}
+{{- $customStyles := resources.Match "css/custom/**.css" -}}
+{{/* bundle CSS files */}}
+{{- $Styles := $themeStyles | append $customStyles | resources.Concat "css/styles.css" -}}
+
+{{- with $Styles }}
+  {{- if hugo.IsDevelopment }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{- else }}
+    {{- with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{- end }}
+  {{- end }}
+{{- end }}

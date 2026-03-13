@@ -24,7 +24,7 @@ features = [
     "minimal appearance",
     "mobile-first and responsive",
     "automatic dark mode",
-    "scss",
+    "vanilla css",
     "multilingual",
     "translation list in single page",
     "language selector",

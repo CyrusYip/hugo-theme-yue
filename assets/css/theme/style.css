@@ -1,0 +1,165 @@
+/* Global */
+.html {
+  font-size: var(--base-font-size); /* rem */
+}
+
+.body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Break long words */
+  overflow-wrap: break-word;
+}
+
+.toc {
+  margin-block: 1rem;
+}
+
+.toc__summary {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+blockquote {
+  padding: 0.5rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+}
+
+figure {
+  margin-inline: 0;
+}
+
+/* Heading anchor link */
+.heading__anchor {
+  display: none;
+}
+.heading:hover > .heading__anchor {
+  display: inline;
+}
+
+/* Table */
+.table-wrapper {
+  /* Horizontal scrollbar for table */
+  overflow-x: auto;
+  /* Margin */
+  margin-block: 1rem;
+
+  & > table {
+    /* Override global word-break, don't break Chinese/Japanese/Korean (CJK) text */
+    word-break: keep-all;
+    /* Style */
+    border-collapse: collapse;
+  }
+
+  & > table :is(td, th) {
+    padding: 0.5rem;
+    text-align: start;
+  }
+}
+
+/* Menu and language selector */
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.menu__link--active {
+  font-weight: bolder;
+}
+
+/* Paginator */
+.pagination {
+  display: flex;
+  gap: 1rem;
+}
+
+.page-item.active {
+  font-weight: bolder;
+}
+
+/* Page nav */
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+}
+
+/* Make [section post title / term post title] close to date info */
+.section-post-title,
+.term-post-title {
+  margin-block-start: 0;
+}
+
+/* Make home post title close to summary */
+.home-post-title {
+  margin-block-end: 0;
+}
+
+/* Make summary close to home post title */
+.summary {
+  margin-block-start: 0;
+}
+
+/* Inline code */
+:not(pre) > code {
+  padding-inline: 0.25rem;
+}
+
+/*
+Fenced code block (with line number, with language): div.highlight > div.chroma > table.lntable > tbody > tr > td.lntd > pre.chroma > code.language-javascript
+Fenced code block (without line number, with language): div.highlight > pre.chroma > code.language-javascript
+Fenced code block (without line number, without language) / indented code block: pre > code
+*/
+
+/* Code block with specified language */
+div.highlight {
+  /* Horizontal scrollbar */
+  overflow-x: auto;
+  /* Prevent two code blocks sticking together */
+  margin-block: 1rem;
+}
+
+/* With line number */
+/* Prevent italic character overflowing */
+div.highlight > div.chroma > table.lntable {
+  padding-inline-end: 0.4rem; /* same as line number's padding */
+}
+
+/* Without line number */
+/* Prevent italic character overflowing (padding-inline-end doesn't work on Firefox Linux 128.0 and Chrome Linux 126.0.6478.182) */
+div.highlight > pre.chroma {
+  padding-inline: 0.4rem;
+}
+
+/* Code block [without specified language / indented with 4 spaces] */
+pre:not(.chroma) {
+  /* Horizontal scrollbar */
+  overflow-x: auto;
+  padding-block: 1rem;
+  padding-inline: 0.4rem; /* padding-inline-end doesn't work on Firefox Linux 128.0 */
+}
+
+pre {
+  /* Smaller font size */
+  font-size: 0.875rem;
+}
+
+.footer {
+  font-size: smaller;
+}
