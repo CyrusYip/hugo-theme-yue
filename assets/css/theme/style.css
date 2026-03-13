@@ -57,19 +57,18 @@ figure {
   overflow-x: auto;
   /* Margin */
   margin-block: 1rem;
-}
 
-.table-wrapper > table {
-  /* Override global word-break, don't break Chinese/Japanese/Korean (CJK) text */
-  word-break: keep-all;
-  /* Style */
-  border-collapse: collapse;
-}
+  & > table {
+    /* Override global word-break, don't break Chinese/Japanese/Korean (CJK) text */
+    word-break: keep-all;
+    /* Style */
+    border-collapse: collapse;
+  }
 
-.table-wrapper > table td,
-.table-wrapper > table th {
-  padding: 0.5rem;
-  text-align: start;
+  & > table :is(td, th) {
+    padding: 0.5rem;
+    text-align: start;
+  }
 }
 
 /* Menu and language selector */
