@@ -1,4 +1,4 @@
-{{ $i18n := index site.Data "i18n" }} {{- /* data/i18n.yaml */ -}}
+{{ $i18n := index hugo.Data "i18n" }} {{- /* data/i18n.yaml */ -}}
 {{ if .IsTranslated }}
   <ul class="translation-list">
     {{ range .Translations -}}

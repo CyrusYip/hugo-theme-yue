@@ -5,6 +5,7 @@
 - Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale).
 - Replace [LanguageName](https://gohugo.io/methods/site/language/#languagename) with [Label](https://gohugo.io/methods/site/language/#label).
 - Replace [LanguageDirection](https://gohugo.io/methods/site/language/#languagedirection) with [Direction](https://gohugo.io/methods/site/language/#direction).
+- Replace [site.Data](https://gohugo.io/methods/site/data/) with [hugo.Data](https://gohugo.io/functions/hugo/data/).
 
 ---
 
