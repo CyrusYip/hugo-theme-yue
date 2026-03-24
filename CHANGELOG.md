@@ -4,13 +4,15 @@
 
 - Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale).
 - Replace [LanguageName](https://gohugo.io/methods/site/language/#languagename) with [Label](https://gohugo.io/methods/site/language/#label).
+- Replace [LanguageDirection](https://gohugo.io/methods/site/language/#languagedirection) with [Direction](https://gohugo.io/methods/site/language/#direction).
 
 ---
 
-Todos for the theme users:
+Users need to fix these options in `hugo.yaml`:
 
-- [ ] Replace `languageCode` to `locale` in your `hugo.yaml`.
-- [ ] Replace `languageName` to `label` in your `hugo.yaml`.
+- [ ] Replace `languageCode` with `locale`.
+- [ ] Replace `languageName` with `label`.
+- [ ] Replace `languageDirection` with `direction`.
 
 ## 2026-03-13
 

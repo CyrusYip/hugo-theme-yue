@@ -31,7 +31,7 @@ languages:
   en:
     contentDir: content/en
     locale: en-US
-    languageDirection: ltr
+    direction: ltr
     label: English
     title: Yue # Shown in home page
     weight: 10
@@ -64,7 +64,7 @@ languages:
     hasCJKLanguage: true
     contentDir: content/zh-CN
     locale: zh-CN
-    languageDirection: ltr
+    direction: ltr
     label: 中文
     title: 月
     weight: 20
