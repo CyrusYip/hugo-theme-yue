@@ -2,7 +2,15 @@
 
 ## 2026-03-24
 
-Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale). You need to replace `languageCode` to `locale` in your `hugo.yaml`.
+- Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale).
+- Replace [LanguageName](https://gohugo.io/methods/site/language/#languagename) with [Label](https://gohugo.io/methods/site/language/#label).
+
+---
+
+Todos for the theme users:
+
+- [ ] Replace `languageCode` to `locale` in your `hugo.yaml`.
+- [ ] Replace `languageName` to `label` in your `hugo.yaml`.
 
 ## 2026-03-13
 
