@@ -30,7 +30,7 @@ markup:
 languages:
   en:
     contentDir: content/en
-    languageCode: en-US
+    locale: en-US
     languageDirection: ltr
     languageName: English
     title: Yue # Shown in home page
@@ -63,7 +63,7 @@ languages:
   zh-CN:
     hasCJKLanguage: true
     contentDir: content/zh-CN
-    languageCode: zh-CN
+    locale: zh-CN
     languageDirection: ltr
     languageName: 中文
     title: 月

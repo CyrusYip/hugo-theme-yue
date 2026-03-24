@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2026-03-24
+
+Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale). You need to replace `languageCode` to `locale` in your `hugo.yaml`.
+
 ## 2026-03-13
 
 Migrate from SCSS to vanilla CSS since libsass was deprecated in Hugo v0.153.0 (see <https://github.com/CyrusYip/hugo-theme-yue/issues/11>).
