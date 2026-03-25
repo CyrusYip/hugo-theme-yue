@@ -1,15 +1,16 @@
 <!-- Timezone: UTC -->
 
-## 2026-03-24
+## 2026-03-25
 
 - Replace [LanguageCode](https://gohugo.io/methods/site/language/#languagecode) with [Locale](https://gohugo.io/methods/site/language/#locale).
 - Replace [LanguageName](https://gohugo.io/methods/site/language/#languagename) with [Label](https://gohugo.io/methods/site/language/#label).
 - Replace [LanguageDirection](https://gohugo.io/methods/site/language/#languagedirection) with [Direction](https://gohugo.io/methods/site/language/#direction).
 - Replace [site.Data](https://gohugo.io/methods/site/data/) with [hugo.Data](https://gohugo.io/functions/hugo/data/).
+- Replace [site.Languages](https://gohugo.io/methods/site/languages/) with [hugo.Sites](https://gohugo.io/functions/hugo/sites/).
 
 ---
 
-Users need to fix these options in `hugo.yaml`:
+Users need to **upgrade Hugo to v0.158.0** and fix these options in `hugo.yaml`:
 
 - [ ] Replace `languageCode` with `locale`.
 - [ ] Replace `languageName` with `label`.

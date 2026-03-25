@@ -6,9 +6,9 @@
     {{ end -}}
   {{ else -}}
   {{- /* link to home page */ -}}
-    {{ range site.Languages -}}
-      {{ if ne site.Language.Lang .Lang -}} {{- /* ignore current language */ -}}
-        <li class="language__item"><a class="language__link" href="{{ .Lang | relURL }}">{{ .Label }}</a></li>
+    {{ range hugo.Sites -}}
+      {{ if ne $.Language.Name .Language.Name -}} {{- /* ignore current language */ -}}
+        <li class="language__item"><a class="language__link" href="{{ .Home.RelPermalink }}">{{ .Language.Label }}</a></li>
       {{ end -}}
     {{ end -}}
   {{ end -}}
