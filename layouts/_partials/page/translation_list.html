@@ -1,4 +1,4 @@
-{{ $i18n := index site.Data "i18n" }} {{- /* data/i18n.yaml */ -}}
+{{ $i18n := index hugo.Data "i18n" }} {{- /* data/i18n.yaml */ -}}
 {{ if .IsTranslated }}
   <ul class="translation-list">
     {{ range .Translations -}}
@@ -10,7 +10,7 @@
     {{ $lang := .Language.Lang }}
     {{ $colon := default ": " (index $i18n $lang "colonInTranslationList") }}
     <li class="translation-list__item">
-      <a class="translation-list__link" href="{{ .RelPermalink }}">{{ or .Language.LanguageName .Language.Lang }}{{ $colon }}{{ .LinkTitle }}</a>
+      <a class="translation-list__link" href="{{ .RelPermalink }}">{{ or .Language.Label .Language.Lang }}{{ $colon }}{{ .LinkTitle }}</a>
     </li>
     {{- end }}
   </ul>
