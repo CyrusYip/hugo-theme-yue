@@ -194,12 +194,17 @@ Favicon is the icon next to title in a browser tab. To use your favicon, put `fa
 
 ### Styles (CSS)
 
-Styles are written in CSS. All files are in [assets/css](assets/css). To customize styles, add CSS file(s) to `assets/css/custom/` directory, and subdirectories are supported.
+Styles are written in CSS. All files are in [assets/css](assets/css). To customize styles, create `assets/css/custom/main.css`, and you can import css files via `@import`. All CSS files will be eventually bundled into one.
 
 Here is an example of hiding the website title:
 
 ```css
-/* assets/css/custom/style/hide-website-title.css */
+/* assets/css/custom/main.css */
+@import "./hide-website-title.css";
+```
+
+```css
+/* assets/css/custom/hide-website-title.css */
 .header > h1 {
   display: none;
 }

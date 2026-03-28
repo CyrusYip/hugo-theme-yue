@@ -1,0 +1,5 @@
+/* theme styles */
+@import "./theme/main.css";
+
+/* custom styles */
+@import "./custom/main.css"
