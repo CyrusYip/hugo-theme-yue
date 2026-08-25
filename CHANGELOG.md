@@ -1,5 +1,9 @@
 <!-- Timezone: UTC -->
 
+## 2026-08-25
+
+Update chromastyles using Hugo v0.165.0.
+
 ## 2026-03-28
 
 Use [css.Build](https://gohugo.io/functions/css/build/). Custom styles should be added to `assets/css/custom/main.css`, see the latest README for more details.
