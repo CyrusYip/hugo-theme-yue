@@ -4,6 +4,7 @@ tags:
 - red
 title: Post 5
 slug: post-5
+summary: This is post 1.
 ---
 
 Post 5.

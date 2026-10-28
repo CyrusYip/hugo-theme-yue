@@ -3,13 +3,14 @@ author: Hugo Authors
 date: 2019-03-09T00:00:00Z
 lastmod: 2019-03-09T00:00:00Z # Won't show because it's equal to date
 description: Lorem Ipsum Dolor Si Amet
+summary: This is a demo post.
 tags:
 - markdown
 - text
 title: Placeholder Text
 ---
 
-Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
+Lorem est tota propiore conpellat pectoribus de pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
 
 1. Exierant elisi ambit vivere dedere
 2. Duce pollice
