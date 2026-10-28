@@ -9,9 +9,9 @@
   {{ .Content }}
 
   {{ range $paginator.Pages }}
+    <h2 class="section-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{- /* show date and lastmod */ -}}
     {{ partial "main/dates.html" . }}
-    <h2 class="section-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   {{ end }}
 
   <nav class="paginator">

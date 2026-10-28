@@ -103,7 +103,7 @@ figure {
 /* Make [section post title / term post title] close to date info */
 .section-post-title,
 .term-post-title {
-  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 /* Make home post title close to summary */
@@ -162,4 +162,5 @@ pre {
 
 .footer {
   font-size: smaller;
+  margin-block-start: 1rem;
 }

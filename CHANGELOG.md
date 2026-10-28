@@ -2,6 +2,10 @@
 
 ## 2026-10-28
 
+Title is put above the date in `/posts/` and `/tags/tag-1/` for consistency.
+
+---
+
 Use relative partial references, e.g. `{{- partial "./dates/date.html" . }}`.
 
 **Hugo v0.167.0 or newer is required**.
