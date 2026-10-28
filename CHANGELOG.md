@@ -1,5 +1,11 @@
 <!-- Timezone: UTC -->
 
+## 2026-10-28
+
+Use relative partial references, e.g. `{{- partial "./dates/date.html" . }}`.
+
+**Hugo v0.167.0 or newer is required**.
+
 ## 2026-08-25
 
 Update chromastyles using Hugo v0.165.0.

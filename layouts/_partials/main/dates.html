@@ -1,5 +1,5 @@
-{{- /* Used by home.html, single.html, list.html */ -}}
-{{- partial "main/dates/date.html" . }}
+{{- /* Used by home.html, page.html, section.html */ -}}
+{{- partial "./dates/date.html" . }}
 {{- if ne .Date .Lastmod }}
-  {{- partial "main/dates/lastmod_wrapper.html" . }}
+  {{- partial "./dates/lastmod_wrapper.html" . }}
 {{- end }}
