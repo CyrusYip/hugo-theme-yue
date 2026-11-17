@@ -1,7 +1,6 @@
 # Default config
 module:
   hugoVersion:
-    extended: true
     min: 0.167.0
 
 params:

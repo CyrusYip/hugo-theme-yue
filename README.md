@@ -70,7 +70,7 @@ To find out all features, check [hugo.yaml](hugo.yaml) (default configuration) a
 
 ### Install
 
-Install [Git](https://git-scm.com/downloads) and latest [Hugo extended](https://gohugo.io/installation/).
+Install [Git](https://git-scm.com/downloads) and latest [Hugo](https://gohugo.io/installation/).
 
 ```shell
 # Create website
@@ -360,7 +360,6 @@ If you don't have Node.js and npm installed, just install the version listed in 
 
 ```json
 "hugo-bin": {
-  "buildTags": "extended",
   "version": "x.yyy.z"
 },
 ```

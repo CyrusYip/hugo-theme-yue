@@ -36,7 +36,7 @@ Users need to **upgrade Hugo to v0.158.0** and fix these options in `hugo.yaml`:
 
 ## 2026-03-13
 
-Migrate from SCSS to vanilla CSS since libsass was deprecated in Hugo v0.153.0 (see <https://github.com/CyrusYip/hugo-theme-yue/issues/11>).
+Migrate from SCSS to vanilla CSS since libsass was deprecated in Hugo v0.153.0 (see <https://github.com/CyrusYip/hugo-theme-yue/issues/11>). Hugo extended is not required now.
 
 To customize styles, add CSS file(s) to `assets/css/custom/` directory. See the latest README for details.
 
