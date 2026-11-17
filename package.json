@@ -14,7 +14,7 @@
     "clean:build": "npm run clean; npm run build"
   },
   "hugo-bin": {
-    "version": "0.169.0"
+    "version": "0.170.0"
   },
   "devDependencies": {
     "hugo-bin": "^0.167.0"
